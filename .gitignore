@@ -1,6 +1,10 @@
 #--- Folders
 minify
+descarted
+admin
+API
+config
+controllers
+models
 
 #--- Files
-./index.php
-./routing.php

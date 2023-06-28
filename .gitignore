@@ -1,0 +1,6 @@
+#--- Folders
+minify
+
+#--- Files
+./index.php
+./routing.php

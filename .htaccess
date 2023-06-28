@@ -1,4 +1,24 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteBase /
+
+# Eliminar la extensión .php y .html
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)/?$ $1.php [L]
+
+# Eliminar la extensión .html
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.html -f
+# RewriteRule ^([^\.]+)/?$ $1.html [L]
+
+# Redireccionar todas las solicitudes de vacantes a vacancy.php
+#RewriteRule ^vacantes$ views/vacancy.php [L]
+# Redireccionar todas las solicitudes de vacantes/:id a vacancy.php?id=:id
+RewriteRule ^vacantes/([^/]+)$ views/vacante.php?id=$1 [L]
+RewriteRule ^novedades/([^/]+)$ views/novedad.php?id=$1 [L]
+
+
+# Redirigir a la carpeta /views como la principal
+RewriteCond %{REQUEST_URI} !^/views/
+RewriteRule ^(.*)$ /views/$1 [L]
+RewriteRule ^servicios(.*)$ /views/servicios/$1 [L]

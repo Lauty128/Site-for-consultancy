@@ -11,10 +11,10 @@ RewriteRule ^([^\.]+)/?$ $1.php [L]
 # RewriteCond %{REQUEST_FILENAME}\.html -f
 # RewriteRule ^([^\.]+)/?$ $1.html [L]
 
-# Redireccionar todas las solicitudes de vacantes a vacancy.php
-#RewriteRule ^vacantes$ views/vacancy.php [L]
-# Redireccionar todas las solicitudes de vacantes/:id a vacancy.php?id=:id
+# Redireccionar todas las solicitudes de vacantes/:id a vacante.php?id=:id
 RewriteRule ^vacantes/([^/]+)$ views/vacante.php?id=$1 [L]
+
+# Redireccionar todas las solicitudes de novedades/:id a novedad.php?id=:id
 RewriteRule ^novedades/([^/]+)$ views/novedad.php?id=$1 [L]
 
 

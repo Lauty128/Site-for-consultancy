@@ -7,10 +7,17 @@
     <title>Servicios</title>
 </head>
 <body>
-    <?php include "../templates/menu.php"; ?>
-    <div class="Header Header--simple">
-        <h1>SERVICIOS PAI</h1>
-    </div>
+    <?php include_once "../templates/header.php" ?>
+
+    <header class="Header Header--simple"> 
+        <?php include_once "../templates/menu.php" ?>
+        <h2 class="Header__title">SERVICIOS</h2>
+    </header>
+
+    <h1 class="simulatedPage">SECCION SERVICIOS</h1>
+
+    <?php include_once "../templates/footer.php" ?>
+    
 
 </body>
 </html>

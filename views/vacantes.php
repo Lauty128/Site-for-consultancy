@@ -7,8 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include "./templates/menu.php"; ?>
-    <h1>VACANTES PAPA</h1>
+<?php include_once "./templates/header.php" ?>
+
+<header class="Header Header--simple"> 
+    <?php include_once "./templates/menu.php" ?>
+    <h2 class="Header__title">VACANTES</h2>
+</header>
+
+<h1 class="simulatedPage">SECCION VACANTES</h1>
+
+<?php include_once "./templates/footer.php" ?>
 
 </body>
 </html>

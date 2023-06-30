@@ -7,7 +7,6 @@
     <title><?php echo $_GET['id']; ?></title>
 </head>
 <body>
-<?php include "./templates/menu.php"; ?>
 
     <pre>
         <?php var_dump($_GET['id']); ?>

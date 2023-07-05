@@ -1,3 +1,13 @@
+<?php 
+    if(!isset($services)){
+        if(file_exists('../data/services.json')){
+            $servicesFile = file_get_contents('../data/services.json');
+        }
+        else $servicesFile = file_get_contents('../../data/services.json');
+        $services = json_decode($servicesFile, true);
+    }
+?>
+
 <nav class="Menu">
     <ul class="Menu__container">
         <li class="Menu__li">
@@ -12,11 +22,11 @@
                 <svg width="24px" height="24px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFF"><path d="M6 9l6 6 6-6" stroke="#FFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </span>
             <ul class="Menu__subMenu">
-                <li> <a href="#">Servicio 1</a></li>
-                <li> <a href="#">Servicio 2</a></li>
-                <li> <a href="#">Servicio 3</a></li>
-                <li> <a href="#">Servicio 4</a></li>
-                <li> <a href="/servicios/">Ver mas</a></li>
+                <?php 
+                    foreach ($services as $key => $service){
+                        echo "<li><a href='/servicios/".$service['url']."'>".$service['name']."</a></li>";
+                    }
+                ?>
             </ul>
         </li>
         <li class="Menu__li">
@@ -44,5 +54,3 @@
         <svg width="40px" height="40px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFF"><path d="M3 5h8M3 12h13M3 19h18" stroke="#FFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
     </div>
 </nav>
-
-<script src="public/js/index.js"></script>

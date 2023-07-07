@@ -13,7 +13,7 @@ Header.addEventListener('click', e=>{
     //------- If you don't click on the over the Menu, then the subMenus are hidden
     const subMenus = document.querySelectorAll('.Menu__subMenu--active');
     if(subMenus.length > 0){
-        console.log('Removing submenu');
+        //console.log('Removing submenu');
         document.querySelectorAll('.Menu__a--active').forEach(element => element.classList.remove('Menu__a--active'))
         subMenus.forEach(subMenu=> subMenu.classList.remove('Menu__subMenu--active'))
     }

@@ -17,7 +17,15 @@
         <?php include_once "./templates/menu.php" ?>
         <div class="Header__information">
             <h2 class="Header__name">SOLUCIONES EFICIENTES</h2>
-            <p class="Header__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, omnis! Esse voluptas fugiat sunt ducimus perferendis ad nisi! At qui architecto molestias ducimus sequi ut commodi soluta obcaecati. Omnis voluptatem libero adipisci eligendi repellat, ullam optio tempore facere ratione, veniam tenetur magnam quam dolor eaque a temporibus. Voluptates esse saepe voluptatibus voluptas animi!</p>
+            <p class="Header__p">
+                Somos una empresa Argentina que surgió en la ciudad de Olavarría, provincia de Buenos Aires, con el fin de brindar servicios de consultoria a PyMEs y grandes organizaciones, permitiendo mejorar su ventaja competitiva en el mercado.   <br>
+            </p>
+            <p class="Header__p">
+                Trabajamos resolviendo problemas bajo un enfoque integral, es decir analizando situaciones desde diferentes perspectivas y adaptando a los clientes las alternativas que tengan un impacto relevante en la operación y gestión del negocio. <br>
+            </p>
+            <p class="Header__p">
+                Los servicios que brindamos se sustentan en la mejora de los procesos, implementación de sistemas de gestión a medida, gestión del capital humano y desarrollo de proyectos de mejora continua en conjunto con nuestros clientes. 
+            </p>
             <button class="Header__button">
                 <a href="/contacto">CONTACTANOS</a>
             </button>
@@ -58,7 +66,7 @@
                     </svg>
                     MISIÓN
                 </h4>
-                <p class="ObjetivesSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente. Possimus excepturi molestias repudiandae cum quia sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente.</p>
+                <p class="ObjetivesSection__p">Nuestra razon de ser es brindar a nuestros clientes soluciones en gestión empresarial, logrando su satisfacción a través del alcance de los resultados esperados en cada uno de los proyectos ejecutados.</p>
             </div>
         </article>
         <article class="ObjetivesSection__article" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
@@ -70,13 +78,12 @@
                     </svg>
                     PILARES DE TRABAJO
                 </h4>
-                <p class="ObjetivesSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente. Possimus excepturi molestias repudiandae cum quia sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente.</p>
+                <p class="ObjetivesSection__p">Consideramos los siguientes 4 pilares al momento de diseñar soluciones correspondientes a una determinada problemática, tomando como base la mejora continua:</p>
                 <ul class="ObjetivesSection__ul">
-                    <li class="ObjetivesSection__li">Ítem 1</li>
-                    <li class="ObjetivesSection__li">Ítem 2</li>
-                    <li class="ObjetivesSection__li">Ítem 3</li>
-                    <li class="ObjetivesSection__li">Ítem 4</li>
-                    <li class="ObjetivesSection__li">Ítem 5</li>
+                    <li class="ObjetivesSection__li">Excelencia operacional</li>
+                    <li class="ObjetivesSection__li">Desarrollo de personas</li>
+                    <li class="ObjetivesSection__li">Visión estratégica</li>
+                    <li class="ObjetivesSection__li">Satisfacción de los clientes</li>
                 </ul>
             </div>
             <div class="ObjetivesSection__imageContainer">
@@ -89,7 +96,15 @@
     <section class="CommitmentSection">
         <div class="CommitmentSection__information">
             <h2 class="CommitmentSection__title title--right-line">COMPROMISO</h2>
-            <p class="CommitmentSection__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nihil fuga possimus sit provident ipsum, expedita neque aperiam doloremque vero commodi officia dolor nemo. Vero corrupti minima eveniet perspiciatis asperiores cumque obcaecati vitae praesentium repudiandae voluptatum, sit delectus doloremque quam ut dolore autem ex quibusdam, deserunt sunt exercitationem doloribus hic. Aliquam in vel amet provident, delectus nobis unde doloribus enim ex inventore!</p>
+            <p class="CommitmentSection__text">
+                Somos una empresa comprometida con nuestros clientes para que alcancen los objetivos deseados y mejoren los resultados de su negocio. 
+            </p>
+            <p class="CommitmentSection__text">
+                Brindamos soporte y asesoria desde el análisis de problemáticas, diseño de soluciones su implementación y control. Nos comprometemos que en cada una de las etapas se alcancen los objetivos esperados y tomamos acciones correctivas y preventivas cuando se genera algun desvío respecto a lo esperado, siempre con foco en la satisfacción de nuestros clientes que depositan confianza en nosotros.
+            </p>
+            <p class="CommitmentSection__text">
+                Poseemos  las herramientas, conocimientos y experiencia para ayudar a las organizaciones que desean encaminarse hacia la excelencia y por ende comenzar a transitar un camino de cambio cultural.
+            </p>
             <a href="/quienes-somos" class="CommitmentSection__button">QUIENES SOMOS</a>
         </div>
         <img src="public/assets/undraw_businessman_re_mlee.svg" alt="man bussines illustration" class="CommitmentSection__image">

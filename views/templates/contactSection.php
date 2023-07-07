@@ -1,6 +1,8 @@
 <section class="ContactSection">
     <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
-    <p class="ContactSection__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem consequatur odit eligendi aliquid. Veniam nostrum eaque voluptas ut aut soluta cupiditate similique voluptates cumque omnis!</p>
+    <p class="ContactSection__p">
+        Consultanos lo que consideres necesario completando el siguiente formulario o a través de wassap al número de telefono y le responderemos a la brevedad. Su consulta no molesta.
+    </p>
 
     <div class="ContactSection__contactsSection"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
         <div class="ContactSection__cardsContainer">

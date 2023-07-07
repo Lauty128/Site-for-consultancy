@@ -24,15 +24,15 @@
     <section class="ItemsAboutUs">
         <div class="ItemsAboutUs__div" data-aos='fade-right' data-aos-delay='80' data-aos-duration='1100'>
             <svg width="60px" height="60px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M20.777 13.345l-7.297 8.027a2 2 0 01-2.96 0l-7.297-8.027a2 2 0 010-2.69l7.297-8.027a2 2 0 012.96 0l7.297 8.027a2 2 0 010 2.69z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <h4 class="ItemsAboutUs__h4">Item numero 1</h4>
+            <h4 class="ItemsAboutUs__h4">Ítem numero 1</h4>
         </div>
         <div class="ItemsAboutUs__div" data-aos='fade-down' data-aos-delay='80' data-aos-duration='1100'>
             <svg width="60px" height="60px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M20.777 13.345l-7.297 8.027a2 2 0 01-2.96 0l-7.297-8.027a2 2 0 010-2.69l7.297-8.027a2 2 0 012.96 0l7.297 8.027a2 2 0 010 2.69z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <h4 class="ItemsAboutUs__h4">Item numero 2</h4>
+            <h4 class="ItemsAboutUs__h4">Ítem numero 2</h4>
         </div>
         <div class="ItemsAboutUs__div" data-aos='fade-left' data-aos-delay='80' data-aos-duration='1100'>
             <svg width="60px" height="60px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M20.777 13.345l-7.297 8.027a2 2 0 01-2.96 0l-7.297-8.027a2 2 0 010-2.69l7.297-8.027a2 2 0 012.96 0l7.297 8.027a2 2 0 010 2.69z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <h4 class="ItemsAboutUs__h4">Item numero 3</h4>
+            <h4 class="ItemsAboutUs__h4">Ítem numero 3</h4>
         </div>
     </section>
 
@@ -43,7 +43,7 @@
                 echo "<div class='OurServicesSection__service' data-aos='zoom-in' data-aos-delay='80' data-aos-duration='1100'>";
                 echo $service['icon'];
                 echo "<span class='OurServicesSection__serviceName'>".$service['name']."</span>";
-                echo  "<p class='OurServicesSection__description'>".$service['description_mini']."</p>";
+                echo  "<p class='OurServicesSection__description'>".$service['description']."</p>";
                 echo "<a href='servicios/".$service['url']."' class='OurServicesSection__seeMore'>Ver mas</a>";
                 echo "</div>";
             } ?>
@@ -55,7 +55,7 @@
             <img src="public/assets/charlesdeluvio-DgoyKNgPiFQ-unsplash.webp" alt="laptop computadora charles deluvio unsplash" class="OurHelpSection__image" data-aos="fade-up-left" data-aos-duration="1100" data-aos-once="true">
         </div>
         <div class="OurHelpSection__information">
-            <h3 class="OurHelpSection__h3">EN QUE PODEMOS AYUDARTE?</h3>
+            <h3 class="OurHelpSection__h3">¿EN QUE PODEMOS AYUDARTE?</h3>
             <p class="OurHelpSection__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolor porro numquam quo beatae nemo illum facere reiciendis, cupiditate impedit eaque inventore iure necessitatibus reprehenderit incidunt dolores odit eos excepturi laudantium quibusdam sit. Accusamus nemo recusandae quis non libero atque obcaecati sed necessitatibus placeat. Ut aspernatur in nemo placeat corrupti.</p>
             <div class="OurHelpSection__buttonsContainer">
                 <a class="OurHelpSection__button" href="/cursos">Cursos</a>

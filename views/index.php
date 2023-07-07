@@ -46,32 +46,6 @@
     </section>
 
     <section class="ObjetivesSection">
-        <!-- <article class="ObjetivesSection__article" data-aos="fade-left"data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
-            <div class="ObjetivesSection__imageContainer">
-                <img src="public/assets/Objetive1.webp" alt="" class="ObjetivesSection__image">
-            </div>    
-            <div class="ObjetivesSection__info">
-                <h4 class="ObjetivesSection__h4">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M12 14a2 2 0 100-4 2 2 0 000 4z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 12c-1.889 2.991-5.282 6-9 6s-7.111-3.009-9-6c2.299-2.842 4.992-6 9-6s6.701 3.158 9 6z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    VISION
-                </h4>
-                <p class="ObjetivesSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente. Possimus excepturi molestias repudiandae cum quia sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente.</p>
-            </div>
-        </article> -->
-
-        <!-- <article class="ObjetivesSection__article" data-aos="fade-right"data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
-            <div class="ObjetivesSection__info">
-                <h4 class="ObjetivesSection__h4">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M12 18a6 6 0 100-12 6 6 0 000 12zM22 12h1M12 2V1M12 23v-1M20 20l-1-1M20 4l-1 1M4 20l1-1M4 4l1 1M1 12h1" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                    METAS
-                </h4>
-                <p class="ObjetivesSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente. Possimus excepturi molestias repudiandae cum quia sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente.</p>
-            </div>
-            <div class="ObjetivesSection__imageContainer">
-                <img src="public/assets/Objetive2.jpg" alt="" class="ObjetivesSection__image">
-            </div>
-        </article> -->
-
         <article class="ObjetivesSection__article" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
             <div class="ObjetivesSection__imageContainer">
                 <img src="public/assets/Objetive3.jpg" alt="" class="ObjetivesSection__image">
@@ -82,7 +56,7 @@
                         <path d="M6.745 4h10.568s-.88 13.257-5.284 13.257c-2.15 0-3.461-3.164-4.239-6.4C6.976 7.468 6.745 4 6.745 4z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M17.313 4s.921-.983 1.687-1c1.5-.034 1.777 1 1.777 1 .294.61.529 2.194-.88 3.657-1.41 1.463-2.987 2.743-3.629 3.2M6.745 4S5.785 3.006 5 3c-1.5-.012-1.777 1-1.777 1-.294.61-.529 2.194.88 3.657a29.896 29.896 0 003.687 3.2M8.507 20c0-1.829 3.522-2.743 3.522-2.743s3.523.914 3.523 2.743H8.507z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
-                    MISION
+                    MISIÓN
                 </h4>
                 <p class="ObjetivesSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente. Possimus excepturi molestias repudiandae cum quia sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente.</p>
             </div>
@@ -98,11 +72,11 @@
                 </h4>
                 <p class="ObjetivesSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente. Possimus excepturi molestias repudiandae cum quia sequi quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam minus laudantium voluptatem quia possimus quod nemo sapiente.</p>
                 <ul class="ObjetivesSection__ul">
-                    <li class="ObjetivesSection__li">item 1</li>
-                    <li class="ObjetivesSection__li">item 2</li>
-                    <li class="ObjetivesSection__li">item 3</li>
-                    <li class="ObjetivesSection__li">item 4</li>
-                    <li class="ObjetivesSection__li">item 5</li>
+                    <li class="ObjetivesSection__li">Ítem 1</li>
+                    <li class="ObjetivesSection__li">Ítem 2</li>
+                    <li class="ObjetivesSection__li">Ítem 3</li>
+                    <li class="ObjetivesSection__li">Ítem 4</li>
+                    <li class="ObjetivesSection__li">Ítem 5</li>
                 </ul>
             </div>
             <div class="ObjetivesSection__imageContainer">
@@ -126,7 +100,7 @@
             <svg width="65px" height="65px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffff">
                 <path d="M21 2l-1 1M3 2l1 1M21 16l-1-1M3 16l1-1M9 18h6M10 21h4M12 3C8 3 5.952 4.95 6 8c.023 1.487.5 2.5 1.5 3.5S9 13 9 15h6c0-2 .5-2.5 1.5-3.5h0c1-1 1.477-2.013 1.5-3.5.048-3.05-2-5-6-5z" stroke="#ffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <h4 class="PointsSectionHome__name">INNOVACION</h4>
+            <h4 class="PointsSectionHome__name">INNOVACIÓN</h4>
         </div>
         <div class="PointsSectionHome__separator"></div>
         <div class="PointsSectionHome__div">
@@ -141,7 +115,7 @@
             <svg width="65px" height="65px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffff">
                 <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#ffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <h4 class="PointsSectionHome__name">TRANSFORMACION</h4>
+            <h4 class="PointsSectionHome__name">TRANSFORMACIÓN</h4>
         </div>
     </section>
 
@@ -152,7 +126,7 @@
 
     <script type="module" src="/public/js/index.js"></script>
     <script>
-        // This script makes the effects 
+        // This script enables the number increaser effect
         function sumarNumeros(span, quantity, text) {
             let index = 0;
             const interval = setInterval(() => {
@@ -166,14 +140,20 @@
         }
 
         let executeSumarNumeros = true
+        const commitmentImage = document.querySelector('.CommitmentSection__image')
         // Si la seccion de MainMessage esta en la pantalla grafica ejecutar estos script
         window.addEventListener('scroll', () => {
             const Y = document.querySelector('.MainMessage').getBoundingClientRect().y;
-            //console.log(Y);
-            if ((Y < 450 && Y > 100) && executeSumarNumeros) {
+            
+            if ((Y < 450 && Y > 0) && executeSumarNumeros) {
                 sumarNumeros(document.getElementById('MainMessage--experience'), 15, 'Años')
                 sumarNumeros(document.getElementById('MainMessage--works'), 10, 'Empresas')
                 executeSumarNumeros = false
+            }
+
+            if ((Y < 660) && (window.innerWidth > 820)){
+                const incrementor = Y + 660;
+                commitmentImage.style.marginRight = `${incrementor * 0.25}px`
             }
         })
     </script>

@@ -23,9 +23,9 @@
             <p class="Header__p">
                 Trabajamos resolviendo problemas bajo un enfoque integral, es decir analizando situaciones desde diferentes perspectivas y adaptando a los clientes las alternativas que tengan un impacto relevante en la operación y gestión del negocio. <br>
             </p>
-            <p class="Header__p">
+            <!-- <p class="Header__p">
                 Los servicios que brindamos se sustentan en la mejora de los procesos, implementación de sistemas de gestión a medida, gestión del capital humano y desarrollo de proyectos de mejora continua en conjunto con nuestros clientes. 
-            </p>
+            </p> -->
             <button class="Header__button">
                 <a href="/contacto">CONTACTANOS</a>
             </button>
@@ -91,6 +91,9 @@
             </div>
         </article>
 
+        <p class="ObjetivesSection__p ObjetivesSection__p--bottom">
+            Los servicios que brindamos se sustentan en la mejora de los procesos, implementación de sistemas de gestión a medida, gestión del capital humano y desarrollo de proyectos de mejora continua en conjunto con nuestros clientes. 
+        </p>
     </section>
 
     <section class="CommitmentSection">
@@ -156,20 +159,23 @@
 
         let executeSumarNumeros = true
         const commitmentImage = document.querySelector('.CommitmentSection__image')
+        const commitmentInfo = document.querySelector('.CommitmentSection__information')
         // Si la seccion de MainMessage esta en la pantalla grafica ejecutar estos script
         window.addEventListener('scroll', () => {
             const Y = document.querySelector('.MainMessage').getBoundingClientRect().y;
-            
+
             if ((Y < 450 && Y > 0) && executeSumarNumeros) {
                 sumarNumeros(document.getElementById('MainMessage--experience'), 15, 'Años')
                 sumarNumeros(document.getElementById('MainMessage--works'), 10, 'Empresas')
                 executeSumarNumeros = false
             }
 
-            if ((Y < 660) && (window.innerWidth > 820)){
-                const incrementor = Y + 660;
-                commitmentImage.style.marginRight = `${incrementor * 0.25}px`
+            if ((Y < -385) && (Y > -880) && (window.innerWidth > 820)){
+                const incrementor = Y*(-1) - 900;
+                commitmentInfo.style.transform = `translateX(${incrementor * .3}px)`
+                commitmentImage.style.transform = `translateX(${incrementor * -.3}px)`
             }
+
         })
     </script>
 

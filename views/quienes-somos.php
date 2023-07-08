@@ -78,7 +78,7 @@
                 Postulesé a las vacantes laborales que considera encuadrar con su perfil y lo audaremos a encontrar su lugar de trabajo.
             </p>
             <div class="OurHelpSection__buttonsContainer">
-                <a class="OurHelpSection__button" href="/cursos">Cursos</a>
+                <!-- <a class="OurHelpSection__button" href="/cursos">Cursos</a> -->
                 <a class="OurHelpSection__button" href="/vacantes">Vacantes</a>
                 <a class="OurHelpSection__button" href="/servicios/">Servicios</a>
             </div>

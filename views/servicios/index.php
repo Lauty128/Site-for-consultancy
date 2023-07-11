@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/index.css">
+    <?php include_once "./templates/head.php" ?>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Servicios</title>
 </head>
 <body>
@@ -14,10 +13,25 @@
         <h2 class="Header__title">SERVICIOS</h2>
     </header>
 
-    <h1 class="simulatedPage">SECCION SERVICIOS</h1>
+    <div class="ServicesContainer">
+        <?php foreach ($services as $key => $service) {?>
+            <a class="ServicesContainer__div" href="/servicios/<?php echo $service['url'] ?>">
+                <img class="ServicesContainer__image" src="/public/assets/services/<?php echo $service['image'] ?>" alt="servicio">
+                <h2 class="ServicesContainer__h2"><?php echo $service['name'] ?></h2>
+            </a>
+        <?php } ?>
+    </div>
 
     <?php include_once "../templates/footer.php" ?>
     
+
+    <script src="/public/js/index.js"></script>
+
+    <!-- AOS LOADING -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

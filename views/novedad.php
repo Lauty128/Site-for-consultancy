@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/index.css">
+    <?php include_once "./templates/head.php" ?>
     <title><?php echo $_GET['id']; ?></title>
 </head>
 <body>
@@ -14,5 +12,6 @@
     </pre>
     <h2>En esta seccion se veran a fondo las novedades</h2>
 
+    <script src="/public/js/index.js"></script>
 </body>
 </html>

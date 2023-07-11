@@ -4,7 +4,7 @@
 
 <footer class="Footer">
     <div class="Footer__mapsContainer">
-        <img src="/public/assets/Logo.png" alt="logo empresa" class="Footer__image">
+        <img src="/public/assets/statics/Logo.png" alt="logo empresa" class="Footer__image">
         <div class="Footer__map">
             <span class="Footer__span">Servicios</span>
             <?php 

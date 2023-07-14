@@ -34,3 +34,6 @@
         </span>
     </div>
 </footer>
+<div class="Footer__redirect flex-center-center">
+    <a href="https://lautarosilverii.tech/">Realizado por Lautaro Silverii</a>
+</div>

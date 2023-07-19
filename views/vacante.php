@@ -1,25 +1,8 @@
 <?php 
-
-    require '../config/dataBase.php';
-    //echo $_GET['id'];
-    $db_class = new Database();
-    $PDO = $db_class->connect_to_database();
-
-    if(get_class($PDO) == 'PDOException'){ 
-        header('Location: /Error'); 
-        die();
-    }
-    else{
-        $query = "SELECT * FROM vacancy WHERE id_vacancy = '".$_GET['id']."'";
-        //echo $query;
-        $call = $PDO->prepare($query);
-        $call->execute();
-        
-        $vacancy = $call->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    $contract = [1=> 'Contrato completo', 2=> 'Tiempo definido', 3=> 'Pasantia']
-
+    require '../controllers/vacancies.controller.php';
+    
+    $vacancy = VacanciesController::getOne($_GET['id']);
+    $contract = [1=> 'Permanente', 2=> 'Tiempo parcial', 3=> 'Pasantia']
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +67,29 @@
             </span>
 
         </div>
+
+        <section class="ContactSection">
+            <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
+            <p class="ContactSection__p">Selecciona la vacante de interes y envianos tus datos para poder postularte</p>
+            
+            <form class="ContactSection__form" style="border: none; padding: 0 5%; margin-top:2em">
+                <input type="text" name="name" placeholder="Nombre" class="ContactSection__input">
+                <input type="text" name="email" placeholder="Email" class="ContactSection__input">
+                <input type="text" name="phone" placeholder="Telefono" class="ContactSection__input">
+                <input type="hidden" name="vacancy" value="<?php echo $vacancy[0]['id_vacancy']; ?>">
+                <textarea name="message" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
+                
+                <div>
+                    <label for="cv-input" class="ContactSection__fileButton">Adjuntar CV</label>
+                    <span style="color: #a6a6a6;">* pdf - jpg - png - docx</span>
+                </div>
+                <input type="file" name="cv" id="cv-input" style="display: none;" accept="image/png,image/jpg,.pdf,.docx">
+                
+                <input type="submit" value="ENVIAR" class="ContactSection__submit">
+            </form>
+        </section>
+
+
     <?php } else{  ?>
         <div class="VacancyDataError">
             <svg width="50px" height="50px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#3F72AF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>

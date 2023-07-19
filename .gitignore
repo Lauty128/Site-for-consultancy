@@ -3,7 +3,8 @@ minify
 descarted
 admin
 api
-controllers
 models
 
 #--- Files
+.env
+/vendor/

@@ -30,7 +30,7 @@
 
     <div class="Footer__bottomInfoContainer">
         <span class="Footer__bottomInfo">
-        © 2023 | Consultoría en el área industrial y servicios
+        © 2023 | Consultoría en el área industrial y de servicios
         </span>
     </div>
 </footer>

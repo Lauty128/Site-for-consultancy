@@ -79,7 +79,7 @@
     </section>
 
 
-    <section class="ContactSection">
+    <section class="ContactSection ContactSection--background">
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
         <p class="ContactSection__p">
             Consultanos lo que consideres necesario completando el siguiente formulario o a través de Whatsapp al número de telefono y le responderemos a la brevedad. Su consulta no molesta.

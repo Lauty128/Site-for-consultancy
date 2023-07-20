@@ -59,7 +59,7 @@
     
     </section>
 
-    <section class="ContactSection">
+    <section class="ContactSection ContactSection--background">
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
         <p class="ContactSection__p">Selecciona la vacante de interes y envianos tus datos para poder postularte</p>
         

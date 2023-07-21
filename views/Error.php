@@ -11,7 +11,7 @@
     <div class="container">
         <img class="ops" src="public/assets/404.svg" />
         <br />
-        <h3>Esta pagina no existe.
+        <h3>Ocurrio un error o esta pagina no existe.
             <br /> Vuelve al inicio de la pagina para seguir navegando.</h3>
         <br />
         <?php

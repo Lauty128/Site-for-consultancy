@@ -1,3 +1,22 @@
+<?php
+    use Form\GeneralForm;
+
+    if(isset($_POST['name'])){
+        require '../config/forms.php';
+        var_dump($_POST);
+        $Form = new GeneralForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'], $_POST['subject']);
+        $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
+        $Form->createEmail();
+        $response = $Form->sendEmail();
+        if(!$response) {
+            echo "Error al enviar el mensaje: ".$Form->viewError();
+          } else {
+            echo "Mensaje enviado!!";
+          }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -17,15 +36,13 @@
             <p class="Header__p">
                 Somos una empresa Argentina que surgió en la ciudad de Olavarría, provincia de Buenos Aires, con el fin de brindar servicios de consultoria a PyMEs y grandes organizaciones, permitiendo mejorar su ventaja competitiva en el mercado.   <br>
             </p>
-            <p class="Header__p">
+            <p class="Header__p Header__p--bottom">
                 Trabajamos resolviendo problemas bajo un enfoque integral, es decir analizando situaciones desde diferentes perspectivas y adaptando a los clientes las alternativas que tengan un impacto relevante en la operación y gestión del negocio. <br>
             </p>
-            <!-- <p class="Header__p">
-                Los servicios que brindamos se sustentan en la mejora de los procesos, implementación de sistemas de gestión a medida, gestión del capital humano y desarrollo de proyectos de mejora continua en conjunto con nuestros clientes. 
-            </p> -->
-            <button class="Header__button">
-                <a href="/contacto">CONTACTANOS</a>
-            </button>
+            <a href="/contacto" class="Header__button">
+                <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFF"><path d="M7 12h10M7 8h6" stroke="#FFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 20.29V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2H7.961a2 2 0 00-1.561.75l-2.331 2.914A.6.6 0 013 20.29z" stroke="#FFFF" stroke-width="1.5"></path></svg>
+                <span>Contactanos</span>
+            </a>
         </div>
     </header>
 
@@ -57,18 +74,6 @@
             </div>
             <div class="ObjetivesSection__info">
                 <h4 class="ObjetivesSection__h4">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF">
-                        <path d="M6.745 4h10.568s-.88 13.257-5.284 13.257c-2.15 0-3.461-3.164-4.239-6.4C6.976 7.468 6.745 4 6.745 4z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M17.313 4s.921-.983 1.687-1c1.5-.034 1.777 1 1.777 1 .294.61.529 2.194-.88 3.657-1.41 1.463-2.987 2.743-3.629 3.2M6.745 4S5.785 3.006 5 3c-1.5-.012-1.777 1-1.777 1-.294.61-.529 2.194.88 3.657a29.896 29.896 0 003.687 3.2M8.507 20c0-1.829 3.522-2.743 3.522-2.743s3.523.914 3.523 2.743H8.507z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                    MISIÓN
-                </h4>
-                <p class="ObjetivesSection__p">Nuestra razon de ser es brindar a nuestros clientes soluciones en gestión empresarial, logrando su satisfacción a través del alcance de los resultados esperados en cada uno de los proyectos ejecutados.</p>
-            </div>
-        </article>
-        <article class="ObjetivesSection__article" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
-            <div class="ObjetivesSection__info">
-                <h4 class="ObjetivesSection__h4">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.7" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF">
                         <path d="M12 2L7 6.643S10.042 7 12 7c1.958 0 5-.357 5-.357L12 2zM8.5 7L5 10.94S7.625 12 12 12s7-1.06 7-1.06L15.5 7" stroke="#3F72AF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M6.5 11.5L3 15.523S5.7 18 12 18s9-2.477 9-2.477L17.5 11.5M12 22v-3" stroke="#3F72AF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -83,6 +88,18 @@
                     <li class="ObjetivesSection__li">Satisfacción de los clientes</li>
                 </ul>
             </div>
+        </article>
+        <article class="ObjetivesSection__article" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
+            <div class="ObjetivesSection__info">
+                <h4 class="ObjetivesSection__h4">
+                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF">
+                        <path d="M6.745 4h10.568s-.88 13.257-5.284 13.257c-2.15 0-3.461-3.164-4.239-6.4C6.976 7.468 6.745 4 6.745 4z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M17.313 4s.921-.983 1.687-1c1.5-.034 1.777 1 1.777 1 .294.61.529 2.194-.88 3.657-1.41 1.463-2.987 2.743-3.629 3.2M6.745 4S5.785 3.006 5 3c-1.5-.012-1.777 1-1.777 1-.294.61-.529 2.194.88 3.657a29.896 29.896 0 003.687 3.2M8.507 20c0-1.829 3.522-2.743 3.522-2.743s3.523.914 3.523 2.743H8.507z" stroke="#3F72AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    MISIÓN
+                </h4>
+                <p class="ObjetivesSection__p">Nuestra razon de ser es brindar a nuestros clientes soluciones en gestión empresarial, logrando su satisfacción a través del alcance de los resultados esperados en cada uno de los proyectos ejecutados.</p>
+            </div>
             <div class="ObjetivesSection__imageContainer">
                 <img src="public/assets/Objetive2.jpg" alt="" class="ObjetivesSection__image">
             </div>
@@ -91,6 +108,36 @@
         <p class="ObjetivesSection__p ObjetivesSection__p--bottom">
             Los servicios que brindamos se sustentan en la mejora de los procesos, implementación de sistemas de gestión a medida, gestión del capital humano y desarrollo de proyectos de mejora continua en conjunto con nuestros clientes. 
         </p>
+    </section>
+
+    <section class="PointsSectionHome">
+        <div class="PointsSectionHome__div">
+            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                <path d="M21 2l-1 1M3 2l1 1M21 16l-1-1M3 16l1-1M9 18h6M10 21h4M12 3C8 3 5.952 4.95 6 8c.023 1.487.5 2.5 1.5 3.5S9 13 9 15h6c0-2 .5-2.5 1.5-3.5h0c1-1 1.477-2.013 1.5-3.5.048-3.05-2-5-6-5z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h4 class="PointsSectionHome__name">INNOVACIÓN</h4>
+        </div>
+        <!-- <div class="PointsSectionHome__separator"></div> -->
+        <div class="PointsSectionHome__div">
+            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                <path d="M20 20H4V4" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M4 16.5L12 9l3 3 4.5-4.5" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h4 class="PointsSectionHome__name">CRECIMIENTO</h4>
+        </div>
+        <!-- <div class="PointsSectionHome__separator"></div> -->
+        <div class="PointsSectionHome__div">
+            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h4 class="PointsSectionHome__name">TRANSFORMACIÓN</h4>
+        </div>
+        <div class="PointsSectionHome__div">
+            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h4 class="PointsSectionHome__name">ITEM EXTRA</h4>
+        </div>
     </section>
 
     <section class="CommitmentSection">
@@ -110,29 +157,6 @@
         <img src="public/assets/undraw_businessman_re_mlee.svg" alt="man bussines illustration" class="CommitmentSection__image">
     </section>
 
-    <section class="PointsSectionHome">
-        <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffff">
-                <path d="M21 2l-1 1M3 2l1 1M21 16l-1-1M3 16l1-1M9 18h6M10 21h4M12 3C8 3 5.952 4.95 6 8c.023 1.487.5 2.5 1.5 3.5S9 13 9 15h6c0-2 .5-2.5 1.5-3.5h0c1-1 1.477-2.013 1.5-3.5.048-3.05-2-5-6-5z" stroke="#ffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-            <h4 class="PointsSectionHome__name">INNOVACIÓN</h4>
-        </div>
-        <div class="PointsSectionHome__separator"></div>
-        <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffff">
-                <path d="M20 20H4V4" stroke="#ffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M4 16.5L12 9l3 3 4.5-4.5" stroke="#ffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-            <h4 class="PointsSectionHome__name">CRECIMIENTO</h4>
-        </div>
-        <div class="PointsSectionHome__separator"></div>
-        <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffff">
-                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#ffff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-            <h4 class="PointsSectionHome__name">TRANSFORMACIÓN</h4>
-        </div>
-    </section>
 
     <section class="ContactSection ContactSection--background">
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
@@ -184,13 +208,6 @@
         }
 
         let executeSumarNumeros = true
-        const commitmentImage = document.querySelector('.CommitmentSection__image')
-        const commitmentInfo = document.querySelector('.CommitmentSection__information')
-
-        if(window.innerWidth < 820){
-            commitmentInfo.style.transform = "translateX(0px)" 
-            commitmentImage.style.transform = "translateX(0px)"
-        }
 
         // Si la seccion de MainMessage esta en la pantalla grafica ejecutar estos script
         window.addEventListener('scroll', () => {
@@ -200,12 +217,6 @@
                 sumarNumeros(document.getElementById('MainMessage--experience'), 15, 'Años')
                 sumarNumeros(document.getElementById('MainMessage--works'), 10, 'Empresas')
                 executeSumarNumeros = false
-            }
-
-            if ((Y < -385) && (Y > -880) && (window.innerWidth > 820)){
-                const incrementor = Y*(-1) - 900;
-                commitmentInfo.style.transform = `translateX(${incrementor * .3}px)`
-                commitmentImage.style.transform = `translateX(${incrementor * -.3}px)`
             }
         })
     </script>

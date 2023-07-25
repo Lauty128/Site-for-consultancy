@@ -63,7 +63,7 @@
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
         <p class="ContactSection__p">Selecciona la vacante de interes y envianos tus datos para poder postularte</p>
         
-        <form class="ContactSection__form" style="border: none; padding: 0 5%; margin-top:2em">
+        <form class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px">
             <input type="text" name="name" placeholder="Nombre" class="ContactSection__input">
             <input type="text" name="email" placeholder="Email" class="ContactSection__input">
             <input type="text" name="phone" placeholder="Telefono" class="ContactSection__input">

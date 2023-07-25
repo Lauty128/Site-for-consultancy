@@ -4,12 +4,12 @@
 
     class CoursesController{
 
-        static function getAll(int $page=0){
+        static function getAll(int $page=0, int $limit = 6){
             $db_class = new Database();
             $PDO = $db_class->connect_to_database(); 
             if(get_class($PDO) == 'PDOException'){ return null; }
 
-            $query = $PDO->prepare("SELECT id_course,title,description,program,category,type,created_at,updated_at FROM course WHERE state = 1 ORDER BY created_at asc LIMIT 6 OFFSET ".($page * 6));
+            $query = $PDO->prepare("SELECT id_course,title,image,description,program,category,type,created_at,updated_at FROM course WHERE state = 1 ORDER BY created_at asc LIMIT ".$limit." OFFSET ".($page * 6));
             $query->execute();
             $courses = $query->fetchAll(PDO::FETCH_ASSOC);
 

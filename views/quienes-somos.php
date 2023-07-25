@@ -17,6 +17,21 @@
             </p>
         </div>
     </header>
+
+    <section class="ItemsAboutUs">
+        <div class="ItemsAboutUs__div" data-aos='fade-right' data-aos-delay='80' data-aos-duration='1100' data-aos-once="true">
+            <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M20 11a8 8 0 10-16 0" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 15.438v-1.876a2 2 0 011.515-1.94l1.74-.436a.6.6 0 01.745.582v5.463a.6.6 0 01-.746.583l-1.74-.435A2 2 0 012 15.439zM22 15.438v-1.876a2 2 0 00-1.515-1.94l-1.74-.436a.6.6 0 00-.745.582v5.463a.6.6 0 00.745.583l1.74-.435A2 2 0 0022 15.439zM20 18v.5a2 2 0 01-2 2h-3.5" stroke="#FFFFFF" stroke-width="1.7"></path><path d="M13.5 22h-3a1.5 1.5 0 010-3h3a1.5 1.5 0 010 3z" stroke="#FFFFFF" stroke-width="1.7"></path></svg>
+            <h4 class="ItemsAboutUs__h4">SOPORTE EN TODO MOMENTO</h4>
+        </div>
+        <div class="ItemsAboutUs__div" data-aos='zoom-in' data-aos-delay='80' data-aos-duration='1100' data-aos-once="true">
+            <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M1 20v-1a7 7 0 017-7v0a7 7 0 017 7v1" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"></path><path d="M13 14v0a5 5 0 015-5v0a5 5 0 015 5v.5" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"></path><path d="M8 12a4 4 0 100-8 4 4 0 000 8zM18 9a3 3 0 100-6 3 3 0 000 6z" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <h4 class="ItemsAboutUs__h4">PROFESIONALES CALIFICADOS</h4>
+        </div>
+        <div class="ItemsAboutUs__div" data-aos='fade-left' data-aos-delay='80' data-aos-duration='1100' data-aos-once="true">
+            <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M9 21h6m-6 0v-5m0 5H3.6a.6.6 0 01-.6-.6v-3.8a.6.6 0 01.6-.6H9m6 5V9m0 12h5.4a.6.6 0 00.6-.6V3.6a.6.6 0 00-.6-.6h-4.8a.6.6 0 00-.6.6V9m0 0H9.6a.6.6 0 00-.6.6V16" stroke="#FFFFFF" stroke-width="1.7"></path></svg>
+            <h4 class="ItemsAboutUs__h4">GESTIÓN POR RESULTADOS</h4>
+        </div>
+    </section>
     
     <section class="DescriptionAboutUsSection"> 
         <!-- <h4 class="DescriptionAboutUsSection__h4">Somos profesionales con amplia trayectoria y formación en  gestión empresarial, desarrollada en organizaciones multinacionales</h4> -->
@@ -37,21 +52,6 @@
         </div>
         <!-- <p class="DescriptionAboutUsSection__p"></p> -->
     </section> 
-
-    <section class="ItemsAboutUs">
-        <div class="ItemsAboutUs__div" data-aos='fade-right' data-aos-delay='80' data-aos-duration='1100'>
-            <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M20 11a8 8 0 10-16 0" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 15.438v-1.876a2 2 0 011.515-1.94l1.74-.436a.6.6 0 01.745.582v5.463a.6.6 0 01-.746.583l-1.74-.435A2 2 0 012 15.439zM22 15.438v-1.876a2 2 0 00-1.515-1.94l-1.74-.436a.6.6 0 00-.745.582v5.463a.6.6 0 00.745.583l1.74-.435A2 2 0 0022 15.439zM20 18v.5a2 2 0 01-2 2h-3.5" stroke="#FFFFFF" stroke-width="1.7"></path><path d="M13.5 22h-3a1.5 1.5 0 010-3h3a1.5 1.5 0 010 3z" stroke="#FFFFFF" stroke-width="1.7"></path></svg>
-            <h4 class="ItemsAboutUs__h4">SOPORTE EN TODO MOMENTO</h4>
-        </div>
-        <div class="ItemsAboutUs__div" data-aos='fade-down' data-aos-delay='80' data-aos-duration='1100'>
-            <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M1 20v-1a7 7 0 017-7v0a7 7 0 017 7v1" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"></path><path d="M13 14v0a5 5 0 015-5v0a5 5 0 015 5v.5" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"></path><path d="M8 12a4 4 0 100-8 4 4 0 000 8zM18 9a3 3 0 100-6 3 3 0 000 6z" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            <h4 class="ItemsAboutUs__h4">PROFESIONALES CALIFICADOS</h4>
-        </div>
-        <div class="ItemsAboutUs__div" data-aos='fade-left' data-aos-delay='80' data-aos-duration='1100'>
-            <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M9 21h6m-6 0v-5m0 5H3.6a.6.6 0 01-.6-.6v-3.8a.6.6 0 01.6-.6H9m6 5V9m0 12h5.4a.6.6 0 00.6-.6V3.6a.6.6 0 00-.6-.6h-4.8a.6.6 0 00-.6.6V9m0 0H9.6a.6.6 0 00-.6.6V16" stroke="#FFFFFF" stroke-width="1.7"></path></svg>
-            <h4 class="ItemsAboutUs__h4">GESTIÓN POR RESULTADOS</h4>
-        </div>
-    </section>
 
     <section class="OurServicesSection">
         <h2 class="OurServicesSection__h2 title--center-line">Servicios ofrecidos</h2>

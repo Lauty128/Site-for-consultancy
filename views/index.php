@@ -1,6 +1,6 @@
 <?php
     use Form\GeneralForm;
-
+    
     if(isset($_POST['name'])){
         require '../config/forms.php';
         var_dump($_POST);
@@ -34,7 +34,7 @@
         <div class="Header__information">
             <h2 class="Header__name">SOLUCIONES EFICIENTES</h2>
             <p class="Header__p">
-                Somos una empresa Argentina que surgió en la ciudad de Olavarría, provincia de Buenos Aires, con el fin de brindar servicios de consultoria a PyMEs y grandes organizaciones, permitiendo mejorar su ventaja competitiva en el mercado.   <br>
+                Somos una empresa Argentina que surgió en la ciudad de Olavarría, provincia de Buenos Aires, con el fin de brindar servicios de consultoría a PyMEs y grandes organizaciones, permitiendo mejorar su ventaja competitiva en el mercado.   <br>
             </p>
             <p class="Header__p Header__p--bottom">
                 Trabajamos resolviendo problemas bajo un enfoque integral, es decir analizando situaciones desde diferentes perspectivas y adaptando a los clientes las alternativas que tengan un impacto relevante en la operación y gestión del negocio. <br>
@@ -98,7 +98,7 @@
                     </svg>
                     MISIÓN
                 </h4>
-                <p class="ObjetivesSection__p">Nuestra razon de ser es brindar a nuestros clientes soluciones en gestión empresarial, logrando su satisfacción a través del alcance de los resultados esperados en cada uno de los proyectos ejecutados.</p>
+                <p class="ObjetivesSection__p">Nuestra razón de ser es brindar a nuestros clientes soluciones en gestión empresarial, logrando su satisfacción a través del alcance de los resultados esperados en cada uno de los proyectos ejecutados.</p>
             </div>
             <div class="ObjetivesSection__imageContainer">
                 <img src="public/assets/Objetive2.jpg" alt="" class="ObjetivesSection__image">
@@ -112,31 +112,35 @@
 
     <section class="PointsSectionHome">
         <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-                <path d="M21 2l-1 1M3 2l1 1M21 16l-1-1M3 16l1-1M9 18h6M10 21h4M12 3C8 3 5.952 4.95 6 8c.023 1.487.5 2.5 1.5 3.5S9 13 9 15h6c0-2 .5-2.5 1.5-3.5h0c1-1 1.477-2.013 1.5-3.5.048-3.05-2-5-6-5z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <svg width="65px" height="65px" stroke-width=".8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3f72af">
+                <path d="M21 2l-1 1M3 2l1 1M21 16l-1-1M3 16l1-1M9 18h6M10 21h4M12 3C8 3 5.952 4.95 6 8c.023 1.487.5 2.5 1.5 3.5S9 13 9 15h6c0-2 .5-2.5 1.5-3.5h0c1-1 1.477-2.013 1.5-3.5.048-3.05-2-5-6-5z" stroke="#3f72af" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <h4 class="PointsSectionHome__name">INNOVACIÓN</h4>
+            <h4 class="PointsSectionHome__name">Innovación</h4>
         </div>
         <!-- <div class="PointsSectionHome__separator"></div> -->
         <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
+            <!-- <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
                 <path d="M20 20H4V4" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M4 16.5L12 9l3 3 4.5-4.5" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg> -->
+            <svg width="65px" height="65px" stroke-width=".8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3f72af">
+                <path d="M16 16V8M12 16v-5M8 16v-3" stroke="#3f72af" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M3 20.4V3.6a.6.6 0 01.6-.6h16.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H3.6a.6.6 0 01-.6-.6z" stroke="#3f72af" stroke-width=".8"></path>
             </svg>
-            <h4 class="PointsSectionHome__name">CRECIMIENTO</h4>
+            <h4 class="PointsSectionHome__name">Crecimiento</h4>
         </div>
         <!-- <div class="PointsSectionHome__separator"></div> -->
         <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <svg width="65px" height="65px" stroke-width=".8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3f72af">
+                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#3f72af" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <h4 class="PointsSectionHome__name">TRANSFORMACIÓN</h4>
+            <h4 class="PointsSectionHome__name">Transformación</h4>
         </div>
         <div class="PointsSectionHome__div">
-            <svg width="65px" height="65px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000">
-                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <svg width="65px" height="65px" stroke-width=".8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3f72af">
+                <path d="M10 9.01l.01-.011M14 9.01l.01-.011M10 13.01l.01-.011M14 13.01l.01-.011M10 17.01l.01-.011M14 17.01l.01-.011M6 20.4V5.6a.6.6 0 01.6-.6H12V3.6a.6.6 0 01.6-.6h4.8a.6.6 0 01.6.6v16.8a.6.6 0 01-.6.6H6.6a.6.6 0 01-.6-.6z" stroke="#3f72af" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
-            <h4 class="PointsSectionHome__name">ITEM EXTRA</h4>
+            <h4 class="PointsSectionHome__name">Item extra</h4>
         </div>
     </section>
 
@@ -147,7 +151,7 @@
                 Somos una empresa comprometida con nuestros clientes para que alcancen los objetivos deseados y mejoren los resultados de su negocio. 
             </p>
             <p class="CommitmentSection__text">
-                Brindamos soporte y asesoria desde el análisis de problemáticas, diseño de soluciones su implementación y control. Nos comprometemos que en cada una de las etapas se alcancen los objetivos esperados y tomamos acciones correctivas y preventivas cuando se genera algun desvío respecto a lo esperado, siempre con foco en la satisfacción de nuestros clientes que depositan confianza en nosotros.
+            Brindamos soporte y asesoría desde el análisis de problemáticas, diseño de soluciones su implementación y control. Nos comprometemos que en cada una de las etapas se alcancen los objetivos esperados y tomamos acciones correctivas y preventivas cuando se genera algún desvío respecto a lo esperado, siempre con foco en la satisfacción de nuestros clientes que depositan confianza en nosotros.
             </p>
             <p class="CommitmentSection__text">
                 Poseemos  las herramientas, conocimientos y experiencia para ayudar a las organizaciones que desean encaminarse hacia la excelencia y por ende comenzar a transitar un camino de cambio cultural.
@@ -161,7 +165,7 @@
     <section class="ContactSection ContactSection--background">
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
         <p class="ContactSection__p">
-            Consultanos lo que consideres necesario completando el siguiente formulario o a través de Whatsapp al número de telefono y le responderemos a la brevedad. Su consulta no molesta.
+        Consultanos lo que consideres necesario completando el siguiente formulario o a través de Whatsapp al número de teléfono y le responderemos a la brevedad. Su consulta no molesta.
         </p>
 
         <div class="ContactSection__contactsSection"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">

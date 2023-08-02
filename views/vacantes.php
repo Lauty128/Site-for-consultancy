@@ -63,10 +63,11 @@
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
         <p class="ContactSection__p">Selecciona la vacante de interes y envianos tus datos para poder postularte</p>
         
-        <form class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px">
-            <input type="text" name="name" placeholder="Nombre" class="ContactSection__input">
-            <input type="text" name="email" placeholder="Email" class="ContactSection__input">
-            <input type="text" name="phone" placeholder="Telefono" class="ContactSection__input">
+        <form action="/vacantes" method="post" enctype="multipart/form-data" class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px">
+            <input type="text" name="name" id="name-input" placeholder="Nombre" class="ContactSection__input">
+            <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
+            <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
+            <input type="text" name="city" id="city-input" placeholder="Ciudad" class="ContactSection__input">
             <?php if( ($response['total'] > 0) && (count($vacancies) > 0) ){ ?>
                 <select class="ContactSection__input" name="vacancy">
                     <option value="">Vacante</option>
@@ -76,10 +77,8 @@
                         </option>
                     <?php } ?>
                 </select>
-            <?php } else{ ?>
-                <input type="text" name="subject" placeholder="Asunto" class="ContactSection__input">
             <?php } ?>
-            <textarea name="message" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
+            <textarea name="message" rows="10" placeholder="Mensaje" id="message-input" class="ContactSection__input"></textarea>
             
             <div>
                 <label for="cv-input" class="ContactSection__fileButton">Adjuntar CV</label>
@@ -91,6 +90,13 @@
         </form>
         
     </section>
+
+    <?php if(isset($responseForm)){ ?>
+        <div class="MessageBox <?php if(!$responseForm['status']){ echo 'MessageBox--error'; } ?>">
+            <svg width="35px" height="35px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <p class="MessageBox__p"><?= $responseForm['message'] ?></p>
+        </div>
+    <?php }?>
 
 
     <?php include_once "./templates/footer.php" ?>

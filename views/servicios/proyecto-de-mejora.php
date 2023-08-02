@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <?php include_once "../templates/head.php" ?>
-    <title>Proyecto de Mejora</title>
+    <title>Proyectos de Mejora</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     
         <article class="Service__mainData">
             <div>
-                <h2 class="Service__h2">Proyecto de Mejora</h2>
+                <h2 class="Service__h2">Proyectos de Mejora</h2>
                 <p class="Service__mainDescription">
                     Nos basamos en los <b>principios y herramientas</b> de ciertas metodologías como <b>Lean manufacturing</b> y <b>Kaizen</b> para inducir a nuestros clientes en dichos conceptos y los apliquen dentro de sus proyectos.
                 </p>
@@ -29,32 +29,32 @@
         <article class="Service__mainServicesSection">
             <h3>Servicios principales</h3>
             <div class="Service__mainServices flex-center-center">
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Reuniones con nuestros clientes para definir la cartera de proyectos potenciales</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Reuniones con nuestros clientes para definir la cartera de proyectos potenciales</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Priorización de proyectos a implementar estableciendo criterios <br> (junto con la dirección de la empresa cliente)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Priorización de proyectos a implementar estableciendo criterios <br> (junto con la dirección de la empresa cliente)</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Definición de equipos de trabajo para cada proyecto<br>(involucrando personal de la empresa cliente)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Definición de equipos de trabajo para cada proyecto<br>(involucrando personal de la empresa cliente)</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Cálculo de ganancia estimada<br>(proyectos seleccionados)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Cálculo de ganancia estimada<br>(proyectos seleccionados)</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Cálculo de ganancia estimada<br(proyectos seleccionados)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Cálculo de ganancia estimada<br(proyectos seleccionados)</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Establecimiento de objetivos por proyecto</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Establecimiento de objetivos por proyecto</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Capacitación a los integrantes de cada proyecto<br>(metodologías de mejora continua)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Capacitación a los integrantes de cada proyecto<br>(metodologías de mejora continua)</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Acompañamiento<br>(durante la implementación)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Acompañamiento<br>(durante la implementación)</span>
                 </div>
-                <div class="Service__serviceCard flex-center-center">
-                    <span style="text-align: center; color:#4d4d4d">Reuniones<br>(asesoramiento y seguimiento con cada equipo)</span>
+                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                    <span style="text-align: center">Reuniones<br>(asesoramiento y seguimiento con cada equipo)</span>
                 </div>
             </div>
         </article>

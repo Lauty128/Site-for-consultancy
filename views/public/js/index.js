@@ -1,3 +1,4 @@
+//------------------------- HEADER
 const Header = document.querySelector(".Header") || document.querySelector(".ServicesHeader")
 
 Header.addEventListener('click', e=>{
@@ -22,4 +23,44 @@ Header.addEventListener('click', e=>{
 document.querySelector('.Menu__exitButton').addEventListener('click', ()=> document.querySelector('.Menu').classList.remove('Menu--active') )
 document.querySelector('.MenuMobile__button').addEventListener('click', ()=>{ 
     document.querySelector('.Menu').classList.add('Menu--active')
+})
+
+//------------------------- MESSAGE BOX
+if(document.querySelector(".MessageBox")){
+    const messageBox = document.querySelector(".MessageBox");
+
+    messageBox.classList.add('MessageBox--active');
+    setTimeout(()=>{ messageBox.classList.remove('MessageBox--active') }, 2500)
+}
+
+//------------------------- FORMS HANDLER
+const inputsName = ['name','email','phone','city','subject','message','service','vacancy']
+const regExp = {
+    name: /^[a-zA-Z _-]{5,30}$/ ,
+    email: /^[\w]+@{1}[\w]+\.[a-z]{2,3}$/,
+    phone: /^[\d\s-]{7,20}$/,
+    city: /^[0-9a-zA-Z ,._-]{3,50}$/
+}
+
+function validateInput(name, value){
+    if(name == 'message') return (value.length < 3000)
+    if(name == 'subject') return (value.length < 200)
+
+    return regExp[name].test(value)
+}
+
+function colourInput(name, result){
+    const input = document.querySelector(`#${name}-input`);
+    if(result && input.classList.contains('ContactSection__input--error')){ input.classList.remove('ContactSection__input--error') }
+    if(!result && !input.classList.contains('ContactSection__input--error')){ input.classList.add('ContactSection__input--error') }
+}
+
+document.body.addEventListener('keyup', e=>{
+    const { target } = e;
+
+    if(inputsName.includes(target.getAttribute('name'))){
+        const name = target.getAttribute('name'); 
+        colourInput(name, validateInput(name, target.value))
+        //console.log(target.getAttribute('name') + ": " + validateInput(target.getAttribute('name'), target.value))
+    }
 })

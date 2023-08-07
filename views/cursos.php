@@ -63,7 +63,7 @@
                 </div>
             </div>
             <span class="CourseBox__lastDate">Ultima actualizacion: 00/00/0000</span>
-            <span style="display: block; font-weight:700; padding:0 1em; margin-top:1em">Descripcion del curso</span>
+            <span class="CourseBox__lastDate" style="display: block; font-weight:700; margin-top:1em">Descripcion del curso</span>
             <p class="CourseBox__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rem laboriosam eaque voluptatem consequatur in? Veritatis necessitatibus commodi ad iusto deserunt consectetur, adipisci laborum et beatae nesciunt deleniti explicabo, inventore architecto quibusdam aperiam nostrum quo, quidem vitae ullam eaque! Quibusdam dolorem voluptas, iste repudiandae, excepturi assumenda odit unde laboriosam doloribus voluptates delectus tempore labore qui quia quidem autem porro commodi quam fuga temporibus dignissimos dolor, voluptatum corrupti repellendus? Id iusto nihil eveniet! Ea aperiam veniam velit excepturi sequi asperiores modi nesciunt dolorem distinctio eos, suscipit id ex consectetur eius voluptate reiciendis sit debitis quam eum nemo consequuntur. Labore, officia! Vel est odit excepturi distinctio facilis quasi, voluptatem voluptas? Ea dolor dolorem facilis iusto neque nisi blanditiis, impedit nostrum! Eos, cupiditate.
             </p>
@@ -72,7 +72,7 @@
             <p class="CourseBox__p">Solo debes escribir tu correo electronico y darle click a pedir. <br>
                 Nosotros nos comunicaremos con usted para enviarle la informacion.</p>
             <form action="/cursos" method="post">
-                <input class="CourseBox__input" placeholder="Correo electronico" type="email" name="email">
+                <input class="CourseBox__input" placeholder="Correo electronico" type="email" name="email" id="email-input">
                 <input type="hidden" name="course" id="course-input" value="">
                 <input class="CourseBox__submit" type="submit" value="Pedir">
             </form>

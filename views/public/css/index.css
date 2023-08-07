@@ -592,7 +592,7 @@ li {
   color: #4d4d4d;
 }
 .ContactSection__input--error {
-  border: 1.7px solid rgb(197, 76, 76);
+  border: 1.7px solid rgb(197, 76, 76) !important;
 }
 .ContactSection__fileButton {
   background-color: #3F72AF;
@@ -1561,6 +1561,9 @@ li {
   font-size: 1.2em;
   width: 300px;
   padding: 0.3em 0.2em 0.3em 0.1em;
+  border: 1px solid rgb(155, 155, 155);
+  outline: none;
+  color: #4d4d4d;
 }
 .CourseBox__submit {
   outline: none;
@@ -1592,6 +1595,9 @@ li {
   .CourseBox__name {
     text-align: center;
     width: 100%;
+  }
+  .CourseBox__lastDate { 
+    padding-left: 0;
   }
   .CourseBox__description {
     padding: 0;

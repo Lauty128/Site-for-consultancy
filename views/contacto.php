@@ -32,6 +32,7 @@
                 </div>
             </div>
             <form class="ContactSection__form" method="post" action="/">
+                <!-- This form is redirect to index.php to validate and submit the inputs -->
                 <input type="text" id="name-input" name="name" placeholder="Nombre" class="ContactSection__input">
                 <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
@@ -41,10 +42,11 @@
             </form>
         </div>
     </section>
-
+    
     <section class="ContactSection ContactSection--darkMode" style="background: none; background-color:#052142">
         <div class="ContactSection__contactsSection ContactSection__contactsSection--revert" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
-            <form class="ContactSection__form" method="post" action="/" style="padding: 0; border:none;">
+            <form class="ContactSection__form" method="post" action="/servicios/" style="padding: 0; border:none;">
+                <!-- This form is redirect to servicios/index.php to validate and submit the inputs -->
                 <input type="text" name="name" placeholder="Nombre" class="ContactSection__input">
                 <input type="text" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" name="phone" placeholder="Telefono" class="ContactSection__input">

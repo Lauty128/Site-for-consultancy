@@ -36,7 +36,7 @@ if(document.querySelector(".MessageBox")){
 //------------------------- FORMS HANDLER
 const inputsName = ['name','email','phone','city','subject','message','service','vacancy']
 const regExp = {
-    name: /^[a-zA-Z _-]{5,30}$/ ,
+    name: /^[a-zA-Z _-]{5,50}$/ ,
     email: /^[\w]+@{1}[\w]+\.[a-z]{2,3}$/,
     phone: /^[\d\s-]{7,20}$/,
     city: /^[0-9a-zA-Z ,._-]{3,50}$/

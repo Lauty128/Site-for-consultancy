@@ -86,11 +86,11 @@
                 </div>
                 <p style="color:#787878">No es necesario especificar el servicio de interés. Al enviar el formulario desde aquí, sabremos que desea obtener más información de <b>Excelencia operacional</b></p>
             </div>
-            <form class="ContactSection__form">
-                <input type="text" name="name" placeholder="Nombre completo" class="ContactSection__input">
-                <input type="text" name="email" placeholder="Email" class="ContactSection__input">
-                <input type="text" name="phone" placeholder="Telefono" class="ContactSection__input">
-                <textarea name="message" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
+            <form class="ContactSection__form" method="post" action="/servicios/">
+                <input type="text" name="name" id="name-input" placeholder="Nombre completo" class="ContactSection__input">
+                <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
+                <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
+                <textarea name="message" rows="10" id="message-input" placeholder="Mensaje" class="ContactSection__input"></textarea>
                 <div>
                     <input type="checkbox" name="information" id="information-input">
                     <label for="information-input" style="margin-right: 30px; user-select:none">Información</label>

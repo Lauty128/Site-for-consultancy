@@ -1,10 +1,81 @@
-<?php 
+<?php
+    //---------- Get data 
     require '../controllers/vacancies.controller.php';
     
     $page = (isset($_GET['page']) && ($_GET['page'] >= 1)) ? (int)$_GET['page'] : 1;
 
     $response = VacanciesController::getAll($page - 1);
     $vacancies = $response['data'];
+
+    //---------- Validation
+    use Form\VacancyForm;
+    use Validator\ValidatorForm;
+
+    if(!empty($_POST)){
+        $fileTypes = ['application/pdf','image/jpeg','image/png'];
+        $cv = $_FILES["cv"];
+        
+        // If the cv file is equal to 0 or greater than 1.8MB or this has a file type invalid then returns a error message 
+        if(($cv['size'] == 0) || ($cv['size'] > 1800000) || !in_array($cv['type'], $fileTypes)){ $responseForm = ['status'=>false, 'message'=>'Sigue los pasos para enviar tu curriculum']; }
+        else{
+            require '../config/validation.php';
+            $validation = new ValidatorForm(
+                $_POST,
+                [
+                    'message'=>[
+                        'type' => 'Length',
+                        'validate' => [
+                            'max'=>3000
+                        ]
+                    ],
+                    'city'=>[
+                        'type' => 'Regexp',
+                        'validate' => "/^[0-9a-zA-Z ,._-]{3,60}$/"
+                    ],
+                    'name' => [
+                        'type' => 'Regexp',
+                        'validate' => "/^[a-zA-Z _-]{5,50}$/"
+                    ],
+                    'email' => [
+                        'type' => 'Regexp',
+                        'validate' => "/^[\w]+@{1}[\w]+\.[a-z]{2,3}$/"
+                    ],
+                    'phone' => [
+                        'type' => 'Regexp',
+                        'validate' => "/^[\d\s-]{6,20}$/"
+                    ]
+                ]
+            );
+
+            if($validation->execute()){
+                $selected_vacancy = VacanciesController::getOne($_POST['vacancy'], 'id_vacancy, role');
+                
+                if(count($selected_vacancy) == 1){
+                    require '../config/forms.php';
+                    
+                    $Form = new VacancyForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['city'], $_POST['message'], $selected_vacancy[0]);
+                    //------ Server configuration
+                    $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
+                    //------ Mail configuration
+                    $Form->addFile($cv["tmp_name"], "Curriculum - ".$_POST["name"].".".explode('.', $cv['name'])[1]);
+                    $Form->createEmail();
+                    
+                    //------ Send mail
+                    $response = $Form->sendEmail();
+                    if(!$response) {
+                        echo "Error al enviar el mensaje: ".$Form->viewError();
+                        $responseForm = ['status'=>false, 'message'=>'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'];
+                    } else {
+                        $responseForm = ['status'=>true, 'message'=>'Postulación enviada con éxito!!'];
+                    }
+                }
+                else{ $responseForm = ['status'=>false, 'message'=>'Debes seleccionar una vacante']; }
+            }
+            else{
+                $responseForm = ['status'=>false, 'message'=>'Ocurrió un problema al validar los campos. Por favor revisa los datos'];
+            }
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -82,9 +153,9 @@
             
             <div>
                 <label for="cv-input" class="ContactSection__fileButton">Adjuntar CV</label>
-                <span style="color: #a6a6a6;">* pdf - jpg - png - docx</span>
+                <span style="color: #a6a6a6;">* pdf - jpg - png | peso max. de 1.8mb</span>
             </div>
-            <input type="file" name="cv" id="cv-input" style="display: none;" accept="image/png,image/jpg,.pdf,.docx">
+            <input type="file" name="cv" id="cv-input" style="display: none;" accept="image/png,image/jpeg,application/pdf">
             
             <input type="submit" value="ENVIAR" class="ContactSection__submit">
         </form>

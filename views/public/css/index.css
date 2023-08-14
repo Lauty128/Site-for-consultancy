@@ -1940,6 +1940,23 @@ li {
   font-size: 1.5em;
   text-align: center;
 }
+.VacanciesList__pagination{
+  margin-top: 2em;
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.VacanciesList__pagination--select{
+  color: #3F72AF;
+}
+.VacanciesList__pagination > a{
+  transition: opacity .1s;
+}
+.VacanciesList__pagination > a:hover{
+  opacity: .6;
+}
 
 .VacancyCard {
   background-color: #f0f0f0;

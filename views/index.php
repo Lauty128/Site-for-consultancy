@@ -1,20 +1,64 @@
 <?php
     use Form\GeneralForm;
-    
-    if(isset($_POST['name'])){
-        require '../config/forms.php';
-        var_dump($_POST);
-        $Form = new GeneralForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'], $_POST['subject']);
-        $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
-        $Form->createEmail();
-        $response = $Form->sendEmail();
-        if(!$response) {
-            echo "Error al enviar el mensaje: ".$Form->viewError();
-          } else {
-            echo "Mensaje enviado!!";
-          }
-    }
+    use Validator\ValidatorForm;
 
+    if(!empty($_POST)){
+        require '../config/validation.php';
+        require '../config/forms.php';
+
+        //-------------------------------------- Validation of Form
+        $validation = new ValidatorForm(
+            $_POST,
+            [
+                'message'=>[
+                    'type' => 'Length',
+                    'validate' => [
+                        'max'=>3000
+                    ]
+                ],
+                'subject'=>[
+                    'type' => 'Length',
+                    'validate' => [
+                        'max'=>200
+                    ]
+                ],
+                'name' => [
+                    'type' => 'Regexp',
+                    'validate' => "/^[a-zA-Z _-]{5,50}$/"
+                ],
+                'email' => [
+                    'type' => 'Regexp',
+                    'validate' => "/^[\w]+@{1}[\w]+\.[a-z]{2,3}$/"
+                ],
+                'phone' => [
+                    'type' => 'Regexp',
+                    'validate' => "/^[\d\s-]{6,20}$/"
+                ]
+            ]
+        );
+        
+        if(!$validation->execute()){
+            //If the validation returns an error, then the mail will not be sent and an error message will be sent to the page
+            $responseForm = ['status'=>false, 'message'=>'Completa los campos requeridos antes de enviar'];
+        }
+        else{
+            //----------------------------- SENT MAIL VIA SMTP SERVER
+            $Form = new GeneralForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'], $_POST['subject']);
+            //------ Server configuration
+            $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
+            //------ Mail configuration
+            $Form->createEmail();
+            
+            //------ Send mail
+            $responseForm = $Form->sendEmail();
+            // if(!$response) {
+            //     echo "Error al enviar el mensaje: ".$Form->viewError();
+            //     $responseForm = ['status'=>false, 'message'=>'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'];
+            // } else {
+            //     $responseForm = ['status'=>true, 'message'=>'Mensaje enviado!!'];
+            // }
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +89,7 @@
             </a>
         </div>
     </header>
-
+    
     <section class="MainMessage">
         <div class="MainMessage__div" data-aos="zoom-in" data-aos-once="true">
             <svg width="60px" height="60px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF" data-aos="zoom-in">
@@ -193,6 +237,13 @@
             </form>
         </div>
     </section>
+
+    <?php if(isset($responseForm)){ ?>
+        <div class="MessageBox <?php if(!$responseForm['status']){ echo 'MessageBox--error'; } ?>">
+            <svg width="35px" height="35px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <p class="MessageBox__p"><?= $responseForm['message'] ?></p>
+        </div>
+    <?php }?>
 
     <?php include_once "./templates/footer.php" ?>
 

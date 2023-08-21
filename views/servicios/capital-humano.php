@@ -23,7 +23,7 @@
                 <a href="#contacto" class="Service__contactButton">Me interesa</a>
             </div>
             <!-- <div class="Service__imageContainer"> -->
-                <img src="/images/services/rrhh.jpg" alt="" class="Service__image">
+                <img src="/admin/images/services/rrhh.jpg" alt="" class="Service__image">
             <!-- </div> -->
         </article>
 

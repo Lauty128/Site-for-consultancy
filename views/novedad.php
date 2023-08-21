@@ -46,8 +46,8 @@
                     <div class="NewsCard">
                         <div style="width: 100%; height:300px; margin-bottom:15px">
                             <?= ($news['image'] == null) 
-                                        ? '<img style="width:100%; height:100%" src="/images/news/notfound.jpg" />' 
-                                        : '<img style="width:100%; height:100%" src="/images/news/'.$news['image'].'" />' ?>
+                                        ? '<img style="width:100%; height:100%" src="/admin/images/news/notfound.jpg" />' 
+                                        : '<img style="width:100%; height:100%" src="/admin/images/news/'.$news['image'].'" />' ?>
                         </div>
                         <h3 class="NewsCard__h3" title="<?= $news['title'] ?>"><?= $news['title'] ?></h3>
                         <div class="flex-between-center">

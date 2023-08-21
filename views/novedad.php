@@ -25,7 +25,7 @@
     <?php if(count($article) == 1) { ?>
         <section class="Article">
             <div class="Article__imageContainer">
-                <img src="/images/news/<?= ($article[0]['image'] == null) ? 'notfound.jpg' : $article[0]['image'] ?>" alt="">
+                <img src="/admin/images/news/<?= ($article[0]['image'] == null) ? 'notfound.jpg' : $article[0]['image'] ?>" alt="">
             </div>
             <h2 class="Article__h2"><?= $article[0]['title'] ?></h2>
             <span class="Article__date">

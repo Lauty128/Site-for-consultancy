@@ -6,7 +6,7 @@ const CoursesContainer = document.querySelector('.CoursesContainer');
 
 //---- Functions
 function loadData(course){
-    document.querySelector('.CourseBox__image').setAttribute('src', `images/courses/${course.image}`) 
+    document.querySelector('.CourseBox__image').setAttribute('src', `/admin/images/courses/${course.image}`) 
     document.querySelector('.CourseBox__name').textContent = course.title
     document.getElementById('course-input').value = course.id_course;
 

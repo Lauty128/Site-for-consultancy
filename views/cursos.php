@@ -27,7 +27,7 @@
             <?php foreach ($courses as $key => $course) { ?> 
                 <div class="CourseCard">
                     <div class="CourseCard__imageContainer">
-                        <img src="images/courses/<?php echo $course['image'] ?>" alt="" class="CourseCard__image">
+                        <img src="/admin/images/courses/<?php echo $course['image'] ?>" alt="" class="CourseCard__image">
                     </div>
                     <span class="CourseCard__date">Ultima actualizacion: <?php $date = date_create($course['updated_at']); echo date_format($date, 'd/m/Y') ?></span>
                     <h3 class="CourseCard__name"><?php echo $course['title'] ?></h3>

@@ -9,7 +9,7 @@
             $PDO = $db_class->connect_to_database(); 
             if(get_class($PDO) == 'PDOException'){ return null; }
 
-            $query = $PDO->prepare("SELECT id_vacancy,role,company,description,ubication,created_at FROM vacancy WHERE state = 1 ORDER BY created_at asc LIMIT ".$limit." OFFSET ".($page * $limit));
+            $query = $PDO->prepare("SELECT id_vacancy,role,company,description,ubication,created_at FROM vacancy WHERE state = 1 ORDER BY created_at desc LIMIT ".$limit." OFFSET ".($page * $limit));
             $query->execute();
             $vacancies = $query->fetchAll(PDO::FETCH_ASSOC);
 

@@ -11,7 +11,7 @@
 
             $where = ($where === null) ? '' : ' WHERE '.$where.' ';
             //echo "SELECT id_news,title,image,created_at FROM news".$where." ORDER BY created_at asc LIMIT ".$limit." OFFSET ".($page * 6);
-            $query = $PDO->prepare("SELECT id_news,title,image,created_at FROM news".$where." ORDER BY created_at asc LIMIT ".$limit." OFFSET ".($page * 6));
+            $query = $PDO->prepare("SELECT id_news,title,image,created_at FROM news".$where." ORDER BY created_at desc LIMIT ".$limit." OFFSET ".($page * 6));
             $query->execute();
             $news = $query->fetchAll(PDO::FETCH_ASSOC);
 

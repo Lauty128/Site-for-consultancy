@@ -51,12 +51,6 @@
             
             //------ Send mail
             $responseForm = $Form->sendEmail();
-            // if(!$response) {
-            //     echo "Error al enviar el mensaje: ".$Form->viewError();
-            //     $responseForm = ['status'=>false, 'message'=>'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'];
-            // } else {
-            //     $responseForm = ['status'=>true, 'message'=>'Mensaje enviado!!'];
-            // }
         }
     }
 ?>

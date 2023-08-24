@@ -19,7 +19,6 @@ RewriteRule ^novedades/([^/]+)$ views/novedad.php?id=$1 [L]
 
 
 # Redirigir a la carpeta /views como la principal
-RewriteRule ^images/(.*)$ images/$1 [L]
 RewriteCond %{REQUEST_URI} !^/views/
 RewriteRule ^(.*)$ /views/$1 [L]
 RewriteRule ^servicios(.*)$ /views/servicios/$1 [L]

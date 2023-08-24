@@ -1875,10 +1875,22 @@ li {
   font-size: 1.3em;
   font-weight: 800;
 }
+.Article ul{
+  padding-left: 1.5em;
+}
+.Article li{
+  list-style: disc;
+}
 .Article__autor > svg {
   vertical-align: bottom;
   margin-right: 5px;
 }
+.Article blockquote{
+  padding: 10px;
+  margin-left: 1.5em;
+  border-left: 3px solid #3f72af;
+}
+.Article blockquote > p{ margin: 0; }
 .Article__lastNews {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

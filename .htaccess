@@ -2,6 +2,7 @@ RewriteEngine On
 RewriteBase /
 
 # Eliminar la extensión .php y .html
+RewriteRule ^$ /views/ [L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)/?$ $1.php [L]
@@ -16,7 +17,6 @@ RewriteRule ^vacantes/([^/]+)$ views/vacante.php?id=$1 [L]
 
 # Redireccionar todas las solicitudes de novedades/:id a novedad.php?id=:id
 RewriteRule ^novedades/([^/]+)$ views/novedad.php?id=$1 [L]
-
 
 # Redirigir a la carpeta /views como la principal
 RewriteCond %{REQUEST_URI} !^/views/

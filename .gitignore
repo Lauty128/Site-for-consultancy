@@ -8,3 +8,5 @@ models
 #--- Files
 .env
 /vendor/
+test.php
+template.html

@@ -40,11 +40,11 @@
                 <?= $article[0]['autor'] ?>
             </span>
             <hr>
-            <h3 style="font-size: 1.8em; margin-bottom: 1em;">Ultimos Articulos</h3>
+            <h3 style="font-size: 1.8em; margin: 1em 0;">Ultimos Articulos</h3>
             <div class="Article__lastNews">
                 <?php foreach ($lastNews as $key => $news) { ?>
                     <div class="NewsCard">
-                        <div style="width: 100%; height:300px; margin-bottom:15px">
+                        <div style="width: 100%; height:250px; margin-bottom:15px">
                             <?= ($news['image'] == null) 
                                         ? '<img style="width:100%; height:100%" src="/admin/images/news/notfound.jpg" />' 
                                         : '<img style="width:100%; height:100%" src="/admin/images/news/'.$news['image'].'" />' ?>

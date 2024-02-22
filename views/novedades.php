@@ -22,10 +22,10 @@
     </header>
 
     <section class="VacanciesList">
-        <div class="VacanciesList__container" style="row-gap: 3em;">
+        <div class="VacanciesList__container VacanciesList__container--little" style="row-gap: 3em;">
             <?php foreach ($news as $key => $article) { ?>
                 <div class="NewsCard">
-                    <div style="width: 100%; height:300px; margin-bottom:15px">
+                    <div style="width: 100%; height:250px; margin-bottom:15px">
                         <?= ($article['image'] == null) 
                                     ? '<img style="width:100%; height:100%" src="/admin/images/news/notfound.jpg" />' 
                                     : '<img style="width:100%; height:100%" src="/admin/images/news/'.$article['image'].'" />' ?>

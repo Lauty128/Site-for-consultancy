@@ -161,7 +161,7 @@
             <input type="text" name="name" id="name-input" placeholder="Nombre" class="ContactSection__input">
             <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
             <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
-            <input type="text" name="city" id="city-input" placeholder="Ciudad" class="ContactSection__input">
+            <input type="text" name="city" id="city-input" placeholder="Localidad" class="ContactSection__input">
             <?php if( ($response['total'] > 0) && (count($vacancies) > 0) ){ ?>
                 <select class="ContactSection__input" name="vacancy">
                     <option value="">Vacante</option>

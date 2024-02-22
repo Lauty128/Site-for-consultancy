@@ -70,7 +70,7 @@
                 <h3 class="ContactSection__h3 title--right-line">SERVICIOS</h3>
                 <p style="margin-bottom: 40px; font-size: 1.2em;">Consulte sobre nuestros servicios disponibles para empresas, completando el formulario y especificando los detalles que considere necesarios.</p>
                 <a class="ContactSection__fileButton" href="/servicios" >Ver servicios</a>
-                <p style="font-size: 1.2em;">Puedes ver mas Información sobre los servicios que ofrecemos dando click en el boton</p>
+                <p style="font-size: 1.2em;">Puedes ver mas Información sobre los servicios que ofrecemos dando click en el boton de arriba</p>
             </div>
         </div>
     </section>

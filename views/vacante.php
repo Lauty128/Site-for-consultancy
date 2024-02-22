@@ -76,7 +76,7 @@
                 <input type="text" id="name-input" name="name" placeholder="Nombre" class="ContactSection__input">
                 <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
-                <input type="text" name="city" id="city-input" placeholder="Ciudad" class="ContactSection__input">
+                <input type="text" name="city" id="city-input" placeholder="Localidad" class="ContactSection__input">
                 <input type="hidden" name="vacancy" value="<?php echo $vacancy[0]['id_vacancy']; ?>">
                 <textarea name="message" id="message-input" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
                 

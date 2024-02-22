@@ -32,9 +32,9 @@
         <li class="Menu__li">
             <a href="/vacantes" class="Menu__a Menu__a--simple">VACANTES</a>
         </li>
-        <li class="Menu__li">
+        <!-- <li class="Menu__li">
             <a href="/cursos" class="Menu__a Menu__a--simple">CURSOS</a>
-        </li>
+        </li> -->
         <li class="Menu__li">
             <a href="/novedades" class="Menu__a Menu__a--simple">NOVEDADES</a>
         </li>

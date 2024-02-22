@@ -21,7 +21,6 @@
             <a href="/" class="Footer__a">Inicio</a>
             <a href="/quienes-somos" class="Footer__a">Quienes somos</a>
             <a href="/servicios/" class="Footer__a">Servicios</a>
-            <a href="/cursos" class="Footer__a">Cursos</a>
             <a href="/vacantes" class="Footer__a">Vacantes</a>
             <a href="/novedades" class="Footer__a">Novedades</a>
             <a href="/contacto" class="Footer__a">Contacto</a>

@@ -1733,10 +1733,8 @@ li {
   position: relative;
   counter-increment: serviceCard;
 }
-.Service__serviceCard--counter {
-  border-color: #3F72AF;
-  padding: 1.1em;
-}
+.Service__serviceCard--blue{ border-color: #3F72AF }
+.Service__serviceCard--counter { padding: 1.1em }
 .Service__serviceCard--counter::after {
   content: counter(serviceCard);
   position: absolute;
@@ -1785,7 +1783,7 @@ li {
 .Service__benefits-info > ul > li {
   font-size: 1.2em;
   color: #4d4d4d;
-  padding: 2px 0 2px 22px;
+  padding: 2px 0 2px 5px;
 }
 @media screen and (max-width: 900px) {
   .Service__mainData {

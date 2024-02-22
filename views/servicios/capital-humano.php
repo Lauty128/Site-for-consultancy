@@ -23,8 +23,43 @@
                 <a href="#contacto" class="Service__contactButton">Me interesa</a>
             </div>
             <!-- <div class="Service__imageContainer"> -->
-                <img src="/admin/images/services/rrhh.jpg" alt="" class="Service__image">
+                <img src="/public/assets/services/rrhh.jpg" alt="" class="Service__image">
             <!-- </div> -->
+        </article>
+
+        <article class="Service__mainServicesSection">
+            <h3>Servicios principales</h3>
+            <div class="Service__mainServices flex-center-center" style="padding: 20px; border:3px solid #3f72af; border-radius:10px">
+                <p style="text-align: center; font-size: 1.3em; color: #3c3c3c">Implementamos los distintos procesos que forman parte del área de recursos humanos</p>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Descripción de perfiles de puesto</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Sistema de evaluación de desempeño</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Planes de carrera por puesto de trabajo</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Mapas de sucesión y promoción</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Planes de capacitación a medida</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Procedimientos e instructivos</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Programa de alto desempeño</span>
+                </div>
+                <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
+                    <span style="text-align: center">Reclutamiento y selección de personal</span>
+                </div>
+            </div>
+
+            <p class="ObjetivesSection__p ObjetivesSection__p--bottom">
+                Brindamos servicios de búsqueda y selección de candidatos acordes a los requerimientos de cada cliente, utilizando diferentes medios de contacto para encontrar al candidato ideal. <br /> Contactanos para iniciar una búsqueda de personal !!
+            </p>
         </article>
 
     </section>

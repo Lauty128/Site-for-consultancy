@@ -23,7 +23,7 @@
                 <a href="#contacto" class="Service__contactButton">Me interesa</a>
             </div>
             <!-- <div class="Service__imageContainer"> -->
-                <img src="/admin/images/services/pdar.jpg" alt="" class="Service__image">
+                <img src="/public/assets/services/eo.png" alt="" class="Service__image">
             <!-- </div> -->
         </article>
 
@@ -32,16 +32,16 @@
             <div class="Service__mainServices flex-center-center">
                 <div class="Service__serviceCard flex-center-center">
                     <span class="title--center-line">Sistemas de mejora</span>
-                    <p>Capacitación e implementación de metodologías eficientes como: Lean Manufacturing, TPM, mantenimiento autónomo, Kaizen, 5s. </p>
+                    <p>Desarrollamos sistemas de mejora continua a la medida de cada cliente, bajo la aplicación de metodologías eficientes como: Lean Manufacturing, TPM, mantenimiento autónomo, Kaizen, 5s. </p>
                 </div>
                 <div class="Service__serviceCard flex-center-center">
                     <span class="title--center-line">Gestión de calidad</span>
-                    <p>Desarrollamos el sistema de gestión de calidad a medida de cada cliente, aplicando herramientas y metodologías apropiadas y de acuerdo a los requisitos establecidos en la norma ISO9001. </p>
+                    <p>Desarrollamos el sistema de gestión de calidad a medida de cada cliente, aplicando herramientas y metodologías apropiadas y de acuerdo a los requisitos establecidos en la norma ISO9001. <br> Acompañamos a cada cliente en la preparación previa para atravesar un proceso de auditoria externa de acuerdo a la norma ISO9001</p>
                 </div>
                 <div class="Service__serviceCard flex-center-center">
                     <span class="title--center-line">Gestión documental</span>
-                    <p>Disponemos de una base de documentos (manuales, procedimientos, instructivos, formularios, etc) genérica y totalmente adaptable a cada organización en particular. <br>
-                        Dicha base de documentos permite instrumentar y estructurar la implementación de sistemas de mejora continua y de gestión de calidad.
+                    <p>
+                        Desarrollamos una base de documentos adaptables a las características y estructura de cada empresa cliente. Dicha documentación permite organizar y controlar el funcionamiento de cada proceso y área funcional. <br> Ejemplo: manuales, procedimientos, instructivos, formularios, etc.
                     </p>
                 </div>
             </div>

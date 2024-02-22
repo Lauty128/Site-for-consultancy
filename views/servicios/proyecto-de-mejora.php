@@ -18,42 +18,39 @@
             <div>
                 <h2 class="Service__h2">Proyectos de Mejora</h2>
                 <p class="Service__mainDescription">
-                    Nos basamos en los <b>principios y herramientas</b> de ciertas metodologías como <b>Lean manufacturing</b> y <b>Kaizen</b> para inducir a nuestros clientes en dichos conceptos y los apliquen dentro de sus proyectos.
+                    Nos basamos en los <b>principios y herramientas</b> de ciertas metodologías como <b>Lean manufacturing</b> y <b>Kaizen</b> para inducir a nuestros clientes en dichos conceptos y los apliquen dentro de sus proyectos. Acompañamos al cliente en cada una de las etapas de ejecución de cada proyecto
                 </p>
                 <a href="#contacto" class="Service__contactButton">Me interesa</a>
             </div>
 
-            <img src="/admin/images/services/pdm.jpg" alt="" class="Service__image">
+            <img src="/public/assets/services/pdm.jpg" alt="" class="Service__image">
         </article>
 
         <article class="Service__mainServicesSection">
             <h3>Servicios principales</h3>
             <div class="Service__mainServices flex-center-center">
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Reuniones con nuestros clientes para definir la cartera de proyectos potenciales</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Priorización de proyectos a implementar estableciendo criterios <br> (junto con la dirección de la empresa cliente)</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Definición de equipos de trabajo para cada proyecto<br>(involucrando personal de la empresa cliente)</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Cálculo de ganancia estimada<br>(proyectos seleccionados)</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
-                    <span style="text-align: center">Cálculo de ganancia estimada<br(proyectos seleccionados)</span>
-                </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Establecimiento de objetivos por proyecto</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Capacitación a los integrantes de cada proyecto<br>(metodologías de mejora continua)</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Acompañamiento<br>(durante la implementación)</span>
                 </div>
-                <div class="Service__serviceCard Service__serviceCard--counter flex-center-center">
+                <div class="Service__serviceCard Service__serviceCard--counter Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Reuniones<br>(asesoramiento y seguimiento con cada equipo)</span>
                 </div>
             </div>
@@ -67,13 +64,13 @@
             <div class="Service__benefits-info" style="margin-top: 20px;">
                 <h4>¿Que beneficios proporciona el servicio a la empresa?</h4>
                 <ul>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Objetivos asociados al plan estratégico de la compañía</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Disminución de pérdidas a través de soluciones encontradas en los proyectos implementados</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Participación del personal en todos los niveles de la organización</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Transformación cultural enfocada en “cero pérdida”</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Generación de planes de mejora sustentables y de alto impacto</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Estandarización de los procesos y puestos de trabajo</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 20px;">Mejora considerable de la cuenta de resultados de la compañía</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Objetivos asociados al plan estratégico de la compañía</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Disminución de pérdidas a través de soluciones encontradas en los proyectos implementados</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Participación del personal en todos los niveles de la organización</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Transformación cultural enfocada en “cero pérdida”</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Generación de planes de mejora sustentables y de alto impacto</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Estandarización de los procesos y puestos de trabajo</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Mejora considerable de la cuenta de resultados de la compañía</li>
                 </ul>
             </div>
         </article>

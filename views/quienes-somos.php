@@ -13,7 +13,7 @@
         <div class="Header__information">
             <h2 class="Header__title" style="font-size:1.4em; margin-bottom:20px">QUIENES SOMOS</h2>
             <p class="Header__p" style="font-size: 1.7em; width:80%; color:#fff">
-            Somos profesionales con amplia trayectoria y formación en  gestión empresarial, desarrollada en organizaciones multinacionales
+            Somos profesionales con amplia trayectoria y formación en  gestión empresarial, desarrollada en organizaciones multinacionales y Pymes
             </p>
         </div>
     </header>
@@ -47,7 +47,7 @@
         </div>
         <div class="DescriptionAboutUsSection__div">
             <p class="DescriptionAboutUsSection__p">
-            Nuestro abanico de servicios es amplio , nos enfocarnos en la resolución de necesidades referidas a la gestión de los <b>RRHH</b>, a la <b>mejora de procesos industriales o administrativos</b> , <b>capacitaciones</b>,  <b>implementación de sistemas de gestión a medida</b>,  acompañando a nuestros  clientes en cada una de las etapas de cada proyecto, con foco en la <b>mejora continua</b> y la <b>excelencia en la gestión</b>.
+            Nuestro abanico de servicios es amplio, nos enfocamos en la resolución de necesidades referidas a la gestión de los <b>RRHH</b>, a la <b>mejora de procesos industriales o administrativos</b> , <b>capacitaciones</b>,  <b>implementación de sistemas de gestión a medida</b>,  acompañando a nuestros  clientes en cada una de las etapas de cada proyecto, con foco en la <b>mejora continua</b> y la <b>excelencia en la gestión</b>.
             </p>
         </div>
         <!-- <p class="DescriptionAboutUsSection__p"></p> -->

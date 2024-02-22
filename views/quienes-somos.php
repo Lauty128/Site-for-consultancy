@@ -12,7 +12,7 @@
         <?php include_once "./templates/menu.php" ?>
         <div class="Header__information">
             <h2 class="Header__title" style="font-size:1.4em; margin-bottom:20px">QUIENES SOMOS</h2>
-            <p class="Header__p" style="font-size: 1.7em; width:80%; color:#fff">
+            <p class="Header__p" style="font-size: 1.7em; width:80%; color:#fff; margin-bottom:4em">
             Somos profesionales con amplia trayectoria y formación en  gestión empresarial, desarrollada en organizaciones multinacionales y Pymes
             </p>
         </div>

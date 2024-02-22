@@ -1,5 +1,6 @@
 #--- Folders
-minify
+minify/js
+minify/scss
 descarted
 admin
 api

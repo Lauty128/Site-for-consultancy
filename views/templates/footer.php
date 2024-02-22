@@ -22,7 +22,7 @@
             <a href="/quienes-somos" class="Footer__a">Quienes somos</a>
             <a href="/servicios/" class="Footer__a">Servicios</a>
             <a href="/vacantes" class="Footer__a">Vacantes</a>
-            <a href="/novedades" class="Footer__a">Novedades</a>
+            <a href="/blog" class="Footer__a">Blog</a>
             <a href="/contacto" class="Footer__a">Contacto</a>
         </div>
     </div>
@@ -34,5 +34,5 @@
     </div>
 </footer>
 <div class="Footer__redirect flex-center-center">
-    <a href="https://lautarosilverii.tech/">Realizado por Lautaro Silverii</a>
+    <a href="https://www.linkedin.com/in/lautaro-silverii/">Realizado por Lautaro Silverii</a>
 </div>

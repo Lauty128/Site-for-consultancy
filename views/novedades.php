@@ -11,14 +11,14 @@
 <html lang="es">
 <head>
     <?php include_once "./templates/head.php" ?>
-    <title>Novedades</title>
+    <title>Blog</title>
 </head>
 <body>
     <?php include_once "./templates/header.php" ?>
 
     <header class="Header Header--simple"> 
         <?php include_once "./templates/menu.php" ?>
-        <h2 class="Header__title">NOVEDADES</h2>
+        <h2 class="Header__title">BLOG</h2>
     </header>
 
     <section class="VacanciesList">

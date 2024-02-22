@@ -36,7 +36,7 @@
             <a href="/cursos" class="Menu__a Menu__a--simple">CURSOS</a>
         </li> -->
         <li class="Menu__li">
-            <a href="/novedades" class="Menu__a Menu__a--simple">NOVEDADES</a>
+            <a href="/novedades" class="Menu__a Menu__a--simple">BLOG</a>
         </li>
         <li class="Menu__li">
             <a href="/contacto" class="Menu__a Menu__a--contact">CONTACTO</a>

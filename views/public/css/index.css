@@ -1617,13 +1617,13 @@ li {
   flex-direction: row;
   gap: 1em;
   flex-wrap: wrap;
-  width: 80%;
+  max-width: calc(600px + 1em);
   margin: 5em auto;
 }
 .ServicesContainer__div {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   flex-grow: 1;
   overflow: hidden;
   transform: scale(1);

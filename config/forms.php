@@ -45,7 +45,7 @@
         //----- Instance PHPMAILER and configure it
         function SetOptions(string $host, int $port, string $username, string $password)
         {
-            $this->mail = new PHPMailer();
+            $this->mail = new PHPMailer(true);
             $this->mail->CharSet = "UTF-8";
             $this->mail->isHTML();
             $this->mail->addAddress('lautarosilverii@gmail.com', 'Lautaro Silverii');
@@ -53,11 +53,16 @@
 
             //----- SMTP Config
             $this->mail->IsSMTP();
+            $this->mail->SMTPDebug    =   0;
             $this->mail->Host         =   $host;
             $this->mail->SMTPAuth     =   true;
             $this->mail->Port         =   $port;
+            $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $this->mail->Username     =   $username;
-            $this->mail->Password     =   $password;    
+            $this->mail->Password     =   $password; 
+            
+            $logo = realpath('./public/assets/statics/Banner.png') ?? realpath('../public/assets/statics/Banner.png');
+            $this->mail->addEmbeddedImage($logo, 'logo');
         }
 
         function addFile(string $file, string $name = 'archivo'){
@@ -66,27 +71,23 @@
 
         function sendEmail()
         {
-            $this->mail->SetFrom($this->email, $this->name);
+            $this->mail->SetFrom('consultas@soluciones-eficientes.com');
+            $this->mail->addAddress('consultas@soluciones-eficientes.com');
             $this->mail->Subject    = $this->subject;
 
             $this->mail->AltBody = "Cuerpo alternativo del mensaje";
             $this->mail->Body    = $this->body;
-            
-            if($this->state['status']){
-                // If the state is false, then the mail mustn't be sent.
-                if(!$this->mail->send()){
-                    $this->state = [
-                        'status' => false,
-                        'message' => 'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'
-                    ];
-                }
-                return $this->state;
-            }
-            else{
-                // If the state is false, only returns the state.
-                return $this->state;
+
+            try {
+                $this->mail->send();
+            } catch (Exception $e) {
+                $this->state = [
+                    'status' => false,
+                    'message' => 'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'
+                ];
             }
             
+            return $this->state;
         }
 
         function viewError(){ return $this->mail->ErrorInfo; }
@@ -128,31 +129,25 @@
                 </head>
                 <body>
                     <header>
-                        <img src="https://res.cloudinary.com/dyrpgj8od/image/upload/v1689867780/Banner_yqarii.png" alt="logo" style="max-width: 280px">
-                        <div>
-                            <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                            <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                        </div>
+                        <img src="cid:logo" alt="logo" style="max-width: 280px">
                     </header>
                     <h2>'.$this->subject.'</h2>
                     <span><b>Nombre:</b> '.$this->name.'</span>
                     <span><b>Email:</b> '.$this->email.'</span>
                     <span><b>Telefono:</b> '.$this->phone.'</span>
                     <p>
-                        <b style="display: block">Mensaje:</b>
+                        <b style="display: block; margin-top: 20px">Mensaje:</b>
                         '.str_replace(array("\r\n", "\n\r", "\r", "\n"), "<br />", $this->message).'
                     </p>
                     <style>
                         body{padding: 0; margin: 15px}
-                        header{ background-color: #ffff; padding-bottom: 5px; border-bottom: 1px solid black; display: flex; justify-content: space-between; align-items: center }
-                        .network{ margin-right: 10px }
-                        @media screen and (max-width:500px){ .network{ display:none } }
+                        header{ background-color: #ffff; padding-bottom: 90px; margin-bottom:2em ; border-bottom: 1px solid black; display: flex; justify-content: center; align-items: center }
                         h2, span, p{ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin-left:5px ; margin-right:5px }
-                        h2{ color: #3F72AF; margin-top: 8px }
+                        h2{ color: #3F72AF; margin-top: 30px }
                         span{ margin-top: 5px; display: block; font-size: 1.1em; color: #414141 }
                         p{ color: #414141; font-size: 1.1em; line-height: 120% }
                         p > b{ color: #000000; font-size: .8em }
-                </style>
+                    </style>
                 </body>
             </html>
             ';
@@ -188,7 +183,7 @@
                 <html lang="es">
                     <body>
                         <header>
-                            <img src="https://res.cloudinary.com/dyrpgj8od/image/upload/v1689867780/Banner_yqarii.png" alt="logo" style="max-width: 280px">
+                            <img src="cid:logo" alt="logo" style="max-width: 280px">
                             <div>
                                 <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
                                 <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
@@ -268,7 +263,7 @@
             <html lang="es">
                 <body>
                     <header>
-                        <img src="https://res.cloudinary.com/dyrpgj8od/image/upload/v1689867780/Banner_yqarii.png" alt="logo" style="max-width: 280px">
+                        <img src="cid:logo" alt="logo" style="max-width: 280px">
                         <div>
                             <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
                             <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>

@@ -45,7 +45,7 @@
             //----------------------------- SENT MAIL VIA SMTP SERVER
             $Form = new GeneralForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'], $_POST['subject']);
             //------ Server configuration
-            $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
+            $Form->SetOptions('smtp.hostinger.com', 587, 'consultas@soluciones-eficientes.com', '@5vnGsU3PzfG.76');
             //------ Mail configuration
             $Form->createEmail();
             

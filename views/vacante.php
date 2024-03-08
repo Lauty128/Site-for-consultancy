@@ -20,7 +20,7 @@
         <?php include_once "./templates/menu.php" ?>
     </header>
 
-    <?php if(count($vacancy) == 1){ ?>
+    <?php if((count($vacancy) == 1) && $vacancy[0]['state']){ ?>
         <div class="VacancyData">
             <div class="VacancyData__data">
                 <span class="VacancyData__span">

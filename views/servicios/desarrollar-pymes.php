@@ -96,7 +96,7 @@
                 </div>
                 <p style="color:#787878">No es necesario especificar el servicio de interés. Al enviar el formulario desde aquí, sabremos que desea obtener más información de <b>Desarrollar Pymes</b></p>
             </div>
-            <form class="ContactSection__form" method="post" action="/servicios/">
+            <form class="ContactSection__form" method="post" action="/servicios/" onsubmit="sendMail(event)">
                 <input type="text" name="name" id="name-input" placeholder="Nombre completo" class="ContactSection__input">
                 <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
                 <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
@@ -109,7 +109,7 @@
                 </div>
                 <!-- INPUT INVISIBLE SOBRE EL SERVICIO -->
                 <input type="hidden" name="service" value="r5641fg">
-                <input type="submit" value="ENVIAR" class="ContactSection__submit">
+                <input type="submit" value="Enviar" class="ContactSection__submit">
             </form>
         </div>
     </section>

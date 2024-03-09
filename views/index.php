@@ -221,13 +221,13 @@
                     Olavarria, Buenos Aires
                 </div>
             </div>
-            <form class="ContactSection__form" method="post" action="/">
+            <form class="ContactSection__form" method="post" action="/" onsubmit="sendMail(event)">
                 <input type="text" id="name-input" name="name" placeholder="Nombre completo" class="ContactSection__input">
                 <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
                 <input type="text" id="subject-input" name="subject" placeholder="Asunto" class="ContactSection__input">
                 <textarea name="message" id="message-input" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
-                <input type="submit" value="ENVIAR" class="ContactSection__submit">
+                <input type="submit" value="Enviar" class="ContactSection__submit">
             </form>
         </div>
     </section>

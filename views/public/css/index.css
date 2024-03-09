@@ -613,8 +613,22 @@ li {
   outline: none;
   border: none;
   padding: 1em;
+  opacity: 1;
   cursor: pointer;
 }
+.ContactSection__submit--sending{
+  animation: submitButton;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes submitButton {
+  0%   { opacity: 1 }
+  50%  { opacity: .2 }
+  100% { opacity: 1 }
+}
+
 .ContactSection option {
   overflow-x: hidden;
   max-width: 100%;

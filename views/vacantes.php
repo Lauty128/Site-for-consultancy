@@ -157,7 +157,7 @@
         <h2 class="ContactSection__title title--center-line">CONTACTANOS</h2>
         <p class="ContactSection__p">Selecciona la vacante de interes y envianos tus datos para poder postularte</p>
         
-        <form action="/vacantes" method="post" enctype="multipart/form-data" class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px">
+        <form action="/vacantes" method="post" enctype="multipart/form-data" class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px" onsubmit="sendMail(event)">
             <input type="text" name="name" id="name-input" placeholder="Nombre" class="ContactSection__input">
             <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
             <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
@@ -180,7 +180,7 @@
             </div>
             <input type="file" name="cv" id="cv-input" style="display: none;" accept="image/png,image/jpeg,application/pdf">
             
-            <input type="submit" value="ENVIAR" class="ContactSection__submit">
+            <input type="submit" value="Enviar" class="ContactSection__submit">
         </form>
         
     </section>

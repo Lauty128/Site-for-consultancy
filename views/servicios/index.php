@@ -35,6 +35,7 @@
             ]
         );
 
+
         if(!$validation->execute()){
             //If the validation returns an error, then the mail will not be sent and an error message will be sent to the page
             $responseForm = ['status'=>false, 'message'=>'Completa los campos requeridos antes de enviar'];
@@ -42,13 +43,13 @@
         else{
             $information = isset($_POST['information']) ? true : false;
             $budget = isset($_POST['budget']) ? true : false;
+
             //----------------------------- SENT MAIL VIA SMTP SERVER
             $Form = new ServiceForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['message'], $_POST['service'], $information, $budget);
             //------ Server configuration
-            $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
+            $Form->SetOptions('smtp.hostinger.com', 587, 'consultas@soluciones-eficientes.com', '@5vnGsU3PzfG.76');
             //------ Mail configuration
             $Form->createEmail();
-            
             //------ Send mail
             $responseForm = $Form->sendEmail();
         }

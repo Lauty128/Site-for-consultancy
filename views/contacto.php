@@ -31,21 +31,21 @@
                     <span>Olavarria, Buenos Aires</span>
                 </div>
             </div>
-            <form class="ContactSection__form" method="post" action="/">
+            <form class="ContactSection__form" method="post" action="/" onsubmit="sendMail(event)">
                 <!-- This form is redirect to index.php to validate and submit the inputs -->
                 <input type="text" id="name-input" name="name" placeholder="Nombre" class="ContactSection__input">
                 <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
                 <input type="text" id="subject-input" name="subject" placeholder="Asunto" class="ContactSection__input">
                 <textarea id="message-input" name="message" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
-                <input type="submit" value="ENVIAR" class="ContactSection__submit">
+                <input type="submit" value="Enviar" class="ContactSection__submit">
             </form>
         </div>
     </section>
     
     <section class="ContactSection ContactSection--darkMode" style="background: none; background-color:#052142">
         <div class="ContactSection__contactsSection ContactSection__contactsSection--revert" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1300" data-aos-once="true">
-            <form class="ContactSection__form" method="post" action="/servicios/" style="padding: 0; border:none;">
+            <form class="ContactSection__form" method="post" action="/servicios/" style="padding: 0; border:none;" onsubmit="sendMail(event)">
                 <!-- This form is redirect to servicios/index.php to validate and submit the inputs -->
                 <input type="text" name="name" placeholder="Nombre" class="ContactSection__input">
                 <input type="text" name="email" placeholder="Email" class="ContactSection__input">
@@ -63,7 +63,7 @@
                     <input type="checkbox" name="budget" id="budget-input">
                     <label for="budget-input" style="user-select:none">Presupuesto</label>
                 </div>
-                <input type="submit" value="ENVIAR" class="ContactSection__submit">
+                <input type="submit" value="Enviar" class="ContactSection__submit">
             </form>
 
             <div class="ContactSection__cardsContainer">

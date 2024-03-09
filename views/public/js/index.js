@@ -55,6 +55,18 @@ function colourInput(name, result){
     if(!result && !input.classList.contains('ContactSection__input--error')){ input.classList.add('ContactSection__input--error') }
 }
 
+
+function sendMail(e){
+    if(e.target.dataset.sending){
+        console.log("No se puede. Se esta enviando");
+        e.preventDefault();
+    }
+    e.target.dataset.sending = "on"
+    const submitButton = e.target.childNodes[e.target.childNodes.length - 2];
+    submitButton.value = "Enviando..."
+    submitButton.classList.add("ContactSection__submit--sending")
+};
+
 document.body.addEventListener('keyup', e=>{
     const { target } = e;
 

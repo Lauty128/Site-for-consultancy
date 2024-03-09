@@ -61,7 +61,7 @@
             $this->mail->Username     =   $username;
             $this->mail->Password     =   $password; 
             
-            $logo = realpath('./public/assets/statics/Banner.png') ?? realpath('../public/assets/statics/Banner.png');
+            $logo = realpath('./public/assets/statics/Banner.png') ? realpath('./public/assets/statics/Banner.png') : realpath('../public/assets/statics/Banner.png');
             $this->mail->addEmbeddedImage($logo, 'logo');
         }
 
@@ -184,10 +184,6 @@
                     <body>
                         <header>
                             <img src="cid:logo" alt="logo" style="max-width: 280px">
-                            <div>
-                                <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                                <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                            </div>
                         </header>
                         <h2>'.$this->subject.'</h2>
                         <span class="vacancy">Servicio: <b>'.$service['name'].'</b></span>
@@ -204,7 +200,7 @@
                             <b>Información</b>
                         </span>
                         <p>
-                            <b style="display: block">Mensaje:</b>
+                            <b style="display: block; margin-top: 20px">Mensaje:</b>
                             '.str_replace(array("\r\n", "\n\r", "\r", "\n"), "<br />", $this->message).'
                         </p>
                         <style>
@@ -264,10 +260,6 @@
                 <body>
                     <header>
                         <img src="cid:logo" alt="logo" style="max-width: 280px">
-                        <div>
-                            <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M17 2h-3a5 5 0 00-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                            <a class="network" href="#"><svg width="30px" height="30px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                        </div>
                     </header>
                     <h2>'.$this->subject.'</h2>
                     <span class="vacancy"><b>'.$this->vacancy["role"].'</b> ('.$this->vacancy["id_vacancy"].')</span>

@@ -261,9 +261,7 @@
                         <img src="cid:logo" alt="logo" style="max-width: 280px">
                     </header>
                     <h2>'.$this->subject.'</h2>
-                    <a href="/vacantes/'.$this->vacancy["id_vacancy"].'" style="padding-top:20px">
-                        <span class="vacancy"><b>'.$this->vacancy["role"].'</b> ('.$this->vacancy["id_vacancy"].')</span>
-                    </a>
+                    <span class="vacancy"><b>'.$this->vacancy["role"].'</b> ('.$this->vacancy["id_vacancy"].')</span>
                     <hr>
                     <span><b>Nombre:</b> '.$this->name.'</span>
                     <span><b>Email:</b> '.$this->email.'</span>

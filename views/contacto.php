@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <?php include_once "./templates/head.php" ?>
-    <title>Contacto</title>
+    <title>Soluciones eficientes | Contacto</title>
     <meta name="description" content="Contáctanos para obtener más información sobre nuestros servicios de consultoría industrial o para discutir cómo podemos ayudar a tu empresa en Argentina. Estamos aquí para responder a tus preguntas y proporcionarte la asistencia que necesitas para mejorar tu negocio.">
 </head>
 <body>

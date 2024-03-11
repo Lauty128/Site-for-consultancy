@@ -79,7 +79,7 @@
 <html lang="es">
 <head>
     <?php include_once "./templates/head.php" ?>
-    <title>Vacantes</title>
+    <title>Soluciones eficientes | Vacantes</title>
     <meta name="description" content="Descubre las oportunidades de empleo en nuestra empresa. Explora nuestras vacantes de trabajo y únete a nuestro equipo de profesionales comprometidos en brindar soluciones industriales de calidad en Argentina.">
 </head>
 <body>

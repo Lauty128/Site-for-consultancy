@@ -3,7 +3,7 @@
 <head>
     <?php include_once "./templates/head.php" ?>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Consultora Industrial</title>
+    <title>Soluciones eficientes | Nosotros</title>
     <meta name="description" content="Descubre quiénes somos y nuestra misión como consultora industrial en Argentina. Conoce a nuestro equipo de expertos en ingeniería industrial y entérate de nuestra pasión por ayudar a las empresas a alcanzar su máximo potencial a través de soluciones industriales innovadoras y eficaces.">
 </head>
 <body>

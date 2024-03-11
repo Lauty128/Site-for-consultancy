@@ -3,6 +3,7 @@
 <head>
     <?php include_once "../templates/head.php" ?>
     <title>Desarrollar Pymes</title>
+    <meta name="description" content="Realizamos un diagnóstico completo de la empresa con el fin de detectar oportunidades de mejora en cada una de las áreas y niveles jerárquicos, presentamos un análisis y plan de trabajo a la dirección de la empresa, estructurando la implantación de dicho plan mediante etapas y su correspondiente seguimiento de avances.">
 </head>
 <body>
 

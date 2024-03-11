@@ -65,12 +65,6 @@
                     
                     //------ Send mail
                     $responseForm = $Form->sendEmail();
-                    // if(!$response) {
-                    //     echo "Error al enviar el mensaje: ".$Form->viewError();
-                    //     $responseForm = ['status'=>false, 'message'=>'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'];
-                    // } else {
-                    //     $responseForm = ['status'=>true, 'message'=>'Postulación enviada con éxito!!'];
-                    // }
                 }
                 else{ $responseForm = ['status'=>false, 'message'=>'Debes seleccionar una vacante']; }
             }
@@ -86,6 +80,7 @@
 <head>
     <?php include_once "./templates/head.php" ?>
     <title>Vacantes</title>
+    <meta name="description" content="Descubre las oportunidades de empleo en nuestra empresa. Explora nuestras vacantes de trabajo y únete a nuestro equipo de profesionales comprometidos en brindar soluciones industriales de calidad en Argentina.">
 </head>
 <body>
     <?php include_once "./templates/header.php" ?>

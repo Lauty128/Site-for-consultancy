@@ -3,6 +3,7 @@
 <head>
     <?php include_once "../templates/head.php" ?>
     <title>Capital Humano</title>
+    <meta name="description" content="Trabajar en la mejora de la gestión del capital humano es una inversión estratégica que genera un gran impacto en las organizaciones.">
 </head>
 <body>
 

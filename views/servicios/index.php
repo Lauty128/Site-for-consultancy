@@ -64,6 +64,7 @@
     <?php include_once "../templates/head.php" ?>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Servicios</title>
+    <meta name="description" content="Conoce nuestros servicios de consultoría industrial diseñados para ayudar a las empresas a mejorar su eficiencia y competitividad en el mercado argentino. Ofrecemos asesoramiento en manufactura, producción, logística, cadena de suministro y más.">
 </head>
 <body>
     <?php include_once "../templates/header.php" ?>

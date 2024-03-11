@@ -48,7 +48,6 @@
             $this->mail = new PHPMailer(true);
             $this->mail->CharSet = "UTF-8";
             $this->mail->isHTML();
-            $this->mail->addAddress('lautarosilverii@gmail.com', 'Lautaro Silverii');
             // En addAddress Iria el Mail de soluciones eficientes, ya que este la recibiria
 
             //----- SMTP Config
@@ -71,8 +70,8 @@
 
         function sendEmail()
         {
-            $this->mail->SetFrom('consultas@soluciones-eficientes.com');
-            $this->mail->addAddress('consultas@soluciones-eficientes.com');
+            $this->mail->SetFrom($this->mail->Username);
+            $this->mail->addAddress($this->mail->Username);
             $this->mail->Subject    = $this->subject;
 
             $this->mail->AltBody = "Cuerpo alternativo del mensaje";
@@ -262,14 +261,16 @@
                         <img src="cid:logo" alt="logo" style="max-width: 280px">
                     </header>
                     <h2>'.$this->subject.'</h2>
-                    <span class="vacancy"><b>'.$this->vacancy["role"].'</b> ('.$this->vacancy["id_vacancy"].')</span>
+                    <a href="/vacantes/'.$this->vacancy["id_vacancy"].'" style="padding-top:20px">
+                        <span class="vacancy"><b>'.$this->vacancy["role"].'</b> ('.$this->vacancy["id_vacancy"].')</span>
+                    </a>
                     <hr>
                     <span><b>Nombre:</b> '.$this->name.'</span>
                     <span><b>Email:</b> '.$this->email.'</span>
                     <span><b>Telefono:</b> '.$this->phone.'</span>
                     <span><b>Ciudad:</b> '.$this->city.'</span>
                     <p>
-                        <b style="display: block">Mensaje:</b>
+                        <b style="display: block; margin-top: 20px">Mensaje:</b>
                         '.str_replace(array("\r\n", "\n\r", "\r", "\n"), "<br />", $this->message).'
                     </p>
                     <style>

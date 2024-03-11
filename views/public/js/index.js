@@ -38,13 +38,13 @@ const inputsName = ['name','email','phone','city','subject','message','service',
 const regExp = {
     name: /^[a-zA-Z _-]{5,50}$/ ,
     email: /^[\w]+@{1}[\w]+\.[a-z]{2,3}$/,
-    phone: /^[\d\s-]{7,20}$/,
-    city: /^[0-9a-zA-Z ,._-]{3,50}$/
+    phone: /^[\d\s-]{7,20}$/
 }
 
 function validateInput(name, value){
     if(name == 'message') return (value.length < 3000)
     if(name == 'subject') return (value.length < 200)
+    if(name == 'city') return ((value.length < 40) && (value.length > 4))
 
     return regExp[name].test(value)
 }

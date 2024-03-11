@@ -29,8 +29,11 @@
                         ]
                     ],
                     'city'=>[
-                        'type' => 'Regexp',
-                        'validate' => "/^[0-9a-zA-Z ,._-]{3,60}$/"
+                        'type' => 'Length',
+                        'validate' => [
+                            "max"=>50,
+                            "min"=>4,
+                        ]
                     ],
                     'name' => [
                         'type' => 'Regexp',
@@ -55,19 +58,19 @@
                     
                     $Form = new VacancyForm($_POST['name'], $_POST['email'], $_POST['phone'], $_POST['city'], $_POST['message'], $selected_vacancy[0]);
                     //------ Server configuration
-                    $Form->SetOptions('sandbox.smtp.mailtrap.io', 2525, '4d8c07b2582602', '1d2e35b47080af');
+                    $Form->SetOptions('smtp.hostinger.com', 587, 'vacantes@soluciones-eficientes.com', 'qe6HC@8\6n|x');
                     //------ Mail configuration
                     $Form->addFile($cv["tmp_name"], "Curriculum - ".$_POST["name"].".".explode('.', $cv['name'])[1]);
                     $Form->createEmail();
                     
                     //------ Send mail
-                    $response = $Form->sendEmail();
-                    if(!$response) {
-                        echo "Error al enviar el mensaje: ".$Form->viewError();
-                        $responseForm = ['status'=>false, 'message'=>'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'];
-                    } else {
-                        $responseForm = ['status'=>true, 'message'=>'Postulación enviada con éxito!!'];
-                    }
+                    $responseForm = $Form->sendEmail();
+                    // if(!$response) {
+                    //     echo "Error al enviar el mensaje: ".$Form->viewError();
+                    //     $responseForm = ['status'=>false, 'message'=>'Ocurrió un error al enviar el mail.<br />Intentalo más tarde'];
+                    // } else {
+                    //     $responseForm = ['status'=>true, 'message'=>'Postulación enviada con éxito!!'];
+                    // }
                 }
                 else{ $responseForm = ['status'=>false, 'message'=>'Debes seleccionar una vacante']; }
             }

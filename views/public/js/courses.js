@@ -12,7 +12,7 @@ function loadData(course){
 
     document.querySelector('.CourseBox__date').textContent =  new Date(course.created_at).toLocaleDateString('es-ES', { year:"numeric", month:"short", day:"numeric"})
     document.querySelector('.CourseBox__lastDate').textContent =  "Ultima actualización:  " +new Date(course.created_at).toLocaleDateString('es-ES', { year:"numeric", month:"short", day:"numeric"})
-    document.querySelector('.CourseBox__description').innerHTML = course.description.replace("\r\n", "<br />")
+    document.querySelector('.CourseBox__description').innerText = course.description
 }
 
 function openBox(){

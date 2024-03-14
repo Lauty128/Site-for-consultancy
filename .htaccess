@@ -18,6 +18,9 @@ RewriteRule ^vacantes/([^/]+)$ views/vacante.php?id=$1 [L]
 # Redireccionar todas las solicitudes de novedades/:id a novedad.php?id=:id
 RewriteRule ^novedades/([^/]+)$ views/novedad.php?id=$1 [L]
 
+# Redireccionar todas las solicitudes de cursos/:id a novedad.php?id=:id
+RewriteRule ^cursos/([^/]+)$ views/curso.php?id=$1 [L]
+
 # Redirigir a la carpeta /views como la principal
 RewriteCond %{REQUEST_URI} !^/views/
 RewriteRule ^(.*)$ /views/$1 [L]

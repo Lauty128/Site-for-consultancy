@@ -118,7 +118,7 @@
                                 <?php echo $vacancy['ubication'] ?>
                             </span>
                         </div>
-                        <a href="<?php echo '/vacantes/'.$vacancy['id_vacancy'] ?>" class="VacancyCard__seeMore">VER MÁS</a>
+                        <a href="<?php echo '/vacantes/'.$vacancy['id_vacancy'] ?>" class="VacancyCard__seeMore">Ver más</a>
                     </div>
                 <?php } ?>
             </div>

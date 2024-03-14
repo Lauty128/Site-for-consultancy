@@ -8,6 +8,8 @@
 
 html, body {
   width: 100%;
+  max-width: 1600px;
+  margin:auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -1501,70 +1503,16 @@ li {
 
 .CourseBox {
   position: relative;
-  max-width: 800px;
-  max-height: 80%;
-  padding: 1em;
+  width: 100%;
+  margin-top: 3em;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #e9e9e9;
-  transform: scale(0.001);
-  transition: transform 0.4s;
-  overflow-y: auto;
-  margin: 1em;
-}
-.CourseBox--active {
-  transform: scale(1);
+  /* background-color: #e9e9e9; */
 }
 .CourseBox svg {
   vertical-align: bottom;
 }
-.CourseBox__exit {
-  position: absolute;
-  top: 0.3em;
-  right: 0.3em;
-  cursor: pointer;
-  transform: scale(1.3);
-}
-.CourseBox__image {
-  width: 100%;
-  height: 100%;
-}
-.CourseBox__header {
-  display: grid;
-  justify-content: flex-start;
-  align-content: stretch;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr;
-  gap: 1em;
-  margin-bottom: 1em;
-}
-.CourseBox__headerInfo {
-  align-self: flex-end;
-}
-.CourseBox__date {
-  margin-right: 20px;
-  font-size: 1.1em;
-  color: rgb(37, 37, 37);
-  margin-bottom: 3px;
-}
-.CourseBox__lastDate {
-  padding: 0 1em;
-  font-size: 1.1em;
-  color: rgb(37, 37, 37);
-  margin-top: 1em;
-}
-.CourseBox__name {
-  font-size: 1.5em;
-}
-.CourseBox__type {
-  font-size: 1.1em;
-  color: #3F72AF;
-}
-.CourseBox__description {
-  text-align: justify;
-  padding: 0 1em;
-  margin-top: 7px;
-}
+
 .CourseBox__h3 {
   width: -moz-fit-content;
   width: fit-content;
@@ -1594,34 +1542,6 @@ li {
   margin-left: 10px;
   font-size: 1.1em;
   color: white;
-}
-@media screen and (max-width: 550px) {
-  .CourseBox__header {
-    margin-top: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr;
-  }
-  .CourseBox__imageContainer {
-    width: 80%;
-    margin: 5px auto;
-  }
-  .CourseBox__headerInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .CourseBox__name {
-    text-align: center;
-    width: 100%;
-  }
-  .CourseBox__lastDate { 
-    padding-left: 0;
-  }
-  .CourseBox__description {
-    padding: 0;
-  }
 }
 
 .ServicesContainer {
@@ -1948,7 +1868,7 @@ li {
   max-width: 800px;
   margin: auto;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 .VacanciesList__container {
   margin-top: 4em;
@@ -2010,6 +1930,7 @@ li {
   height: 7em;
   position: relative;
   overflow: hidden;
+  margin-top: 6px;
 }
 .VacancyCard__description::after {
   content: "";
@@ -2050,6 +1971,9 @@ li {
 
 .VacancyData {
   margin: 5em 10%;
+}
+.VacancyData__div{
+  margin-top: 1em;
 }
 .VacancyData__data {
   display: flex;
@@ -2095,7 +2019,7 @@ li {
 }
 .VacancyData__li {
   position: relative;
-  padding: 5px 0;
+  padding: 2px 0;
   font-size: 1.1em;
 }
 .VacancyData__li::marker {

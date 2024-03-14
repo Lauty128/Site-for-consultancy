@@ -61,7 +61,8 @@
 <head>
     <?php include_once "./templates/head.php" ?>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Consultora Industrial</title>
+    <title>Soluciones eficientes</title>
+    <meta name="description" content="Consultora industrial especializada en brindar soluciones integrales para empresas en Argentina. Ofrecemos servicios de consultoría en manufactura, producción, logística, cadena de suministro y más. Nuestro equipo de expertos en ingeniería industrial está comprometido en optimizar procesos y ofrecer asesoramiento empresarial de alta calidad. Contáctanos para conocer cómo podemos ayudar a mejorar la eficiencia y la competitividad de tu empresa.">
 </head>
 
 <body>

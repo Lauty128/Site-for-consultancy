@@ -3,6 +3,7 @@
 <head>
     <?php include_once "../templates/head.php" ?>
     <title>Proyectos de Mejora</title>
+    <meta name="description" content="Nos basamos en los principios y herramientas de ciertas metodologías como Lean manufacturing y Kaizen para inducir a nuestros clientes en dichos conceptos y los apliquen dentro de sus proyectos. Acompañamos al cliente en cada una de las etapas de ejecución de cada proyecto.">
 </head>
 <body>
 
@@ -18,7 +19,7 @@
             <div>
                 <h2 class="Service__h2">Proyectos de Mejora</h2>
                 <p class="Service__mainDescription">
-                    Nos basamos en los <b>principios y herramientas</b> de ciertas metodologías como <b>Lean manufacturing</b> y <b>Kaizen</b> para inducir a nuestros clientes en dichos conceptos y los apliquen dentro de sus proyectos. Acompañamos al cliente en cada una de las etapas de ejecución de cada proyecto
+                    Nos basamos en los <b>principios y herramientas</b> de ciertas metodologías como <b>Lean manufacturing</b> y <b>Kaizen</b> para inducir a nuestros clientes en dichos conceptos y los apliquen dentro de sus proyectos. Acompañamos al cliente en cada una de las etapas de ejecución de cada proyecto.
                 </p>
                 <a href="#contacto" class="Service__contactButton">Me interesa</a>
             </div>

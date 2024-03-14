@@ -11,7 +11,8 @@
 <html lang="es">
 <head>
     <?php include_once "./templates/head.php" ?>
-    <title>Blog</title>
+    <title>Soluciones eficientes | Blog</title>
+    <meta name="description" content="Explora nuestro blog para encontrar artículos informativos y consejos útiles relacionados con la industria, la manufactura, la logística y más. Mantente al día con las últimas noticias y tendencias en el mundo industrial.">
 </head>
 <body>
     <?php include_once "./templates/header.php" ?>

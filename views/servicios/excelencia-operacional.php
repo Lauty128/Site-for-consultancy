@@ -3,6 +3,7 @@
 <head>
     <?php include_once "../templates/head.php" ?>
     <title>Excelencia Operacional</title>
+    <meta name="description" content="Sabemos la importancia que amerita que nuestros clientes adquieran un sistema de gestión sólido para poder administrar correctamente las diferentes áreas de la organización.">
 </head>
 <body>
 

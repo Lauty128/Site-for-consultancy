@@ -12,7 +12,7 @@
 <html lang="es">
 <head>
     <?php include_once "./templates/head.php" ?>
-    <title>Cursos</title>
+    <title>Soluciones eficientes | Cursos</title>
 </head>
 <body>
     <?php include_once "./templates/header.php" ?>

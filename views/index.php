@@ -272,6 +272,7 @@
             }
         })
     </script>
+    <script src="/public/js/index.js"></script>
 
     <!-- AOS LOADING -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

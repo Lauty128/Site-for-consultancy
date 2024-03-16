@@ -4,15 +4,15 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    if(file_exists('../vendor/PHPMailer/PHPMailer.php')){
-        require_once '../vendor/PHPMailer/Exception.php';
-        require_once '../vendor/PHPMailer/PHPMailer.php';
-        require_once '../vendor/PHPMailer/SMTP.php';
+    if(file_exists('../vendor/phpmailer/PHPMailer.php')){
+        require_once '../vendor/phpmailer/Exception.php';
+        require_once '../vendor/phpmailer/PHPMailer.php';
+        require_once '../vendor/phpmailer/SMTP.php';
     }
     else{
-        require_once '../../vendor/PHPMailer/Exception.php';
-        require_once '../../vendor/PHPMailer/PHPMailer.php';
-        require_once '../../vendor/PHPMailer/SMTP.php';
+        require_once '../../vendor/phpmailer/Exception.php';
+        require_once '../../vendor/phpmailer/PHPMailer.php';
+        require_once '../../vendor/phpmailer/SMTP.php';
     }
 
 

@@ -40,8 +40,10 @@
                         'validate' => "/^[a-zA-Z _-]{5,50}$/"
                     ],
                     'email' => [
-                        'type' => 'Regexp',
-                        'validate' => "/^[\w]+@{1}[\w]+\.[a-z]{2,3}$/"
+                        'type' => 'Length',
+                        'validate' => [
+                            'max'=>50
+                        ]
                     ],
                     'phone' => [
                         'type' => 'Regexp',
@@ -166,7 +168,7 @@
         
         <form action="/vacantes" method="post" enctype="multipart/form-data" class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px" onsubmit="sendMail(event)">
             <input type="text" name="name" id="name-input" placeholder="Nombre" class="ContactSection__input">
-            <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
+            <input type="email" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
             <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
             <input type="text" name="city" id="city-input" placeholder="Localidad" class="ContactSection__input">
             <?php if( ($response['total'] > 0) && (count($vacancies) > 0) ){ ?>

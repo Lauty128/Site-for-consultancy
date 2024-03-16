@@ -27,8 +27,10 @@
                     'validate' => "/^[a-zA-Z _-]{5,50}$/"
                 ],
                 'email' => [
-                    'type' => 'Regexp',
-                    'validate' => "/^[\w]+@{1}[\w]+\.[a-z]{2,3}$/"
+                    'type' => 'Length',
+                    'validate' => [
+                        'max'=>50
+                    ]
                 ],
                 'phone' => [
                     'type' => 'Regexp',
@@ -224,7 +226,7 @@
             </div>
             <form class="ContactSection__form" method="post" action="/" onsubmit="sendMail(event)">
                 <input type="text" id="name-input" name="name" placeholder="Nombre completo" class="ContactSection__input">
-                <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
+                <input type="email" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
                 <input type="text" id="subject-input" name="subject" placeholder="Asunto" class="ContactSection__input">
                 <textarea name="message" id="message-input" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>

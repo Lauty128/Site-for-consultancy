@@ -74,7 +74,7 @@
             
             <form action="/vacantes" method="post" enctype="multipart/form-data" class="ContactSection__form" style="border: none; margin:2em auto 0 auto; max-width:1000px" onsubmit="sendMail(event)">
                 <input type="text" id="name-input" name="name" placeholder="Nombre" class="ContactSection__input">
-                <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
+                <input type="email" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
                 <input type="text" name="city" id="city-input" placeholder="Localidad" class="ContactSection__input">
                 <input type="hidden" name="vacancy" value="<?php echo $vacancy[0]['id_vacancy']; ?>">

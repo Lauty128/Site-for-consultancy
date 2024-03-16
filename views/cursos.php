@@ -42,6 +42,17 @@
                     </div>
                 </div>
             <?php } ?>
+        <?php }else{ ?>
+        
+            <div class="VacanciesList__container VacanciesList__container--little" style="row-gap: 1em; margin-top:5em; grid-template-columns: 1fr">
+                <div style="display:flex; justify-content:center;">
+                    <img src="/public/assets/empty.svg" width="230px" alt="">
+                </div>
+                <p style="text-align:center; font-size: 1.3em;margin-bottom:0; margin-top:2em">No se encontró ningún elemento en esta página.</p>
+                <div style="width: 100%; display:flex; justify-content:center">
+                    <a href="/cursos" style="padding:3px 6px; background-color:#3f72af; color:#fff">Reiniciar pagina</a> 
+                </div>
+            </div>
         <?php } ?>
     </section>
     

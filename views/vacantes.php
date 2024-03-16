@@ -142,10 +142,19 @@
             </div>
         <?php } else{ ?>
         
-            <div class="VacanciesList__error">
+        <div class="VacanciesList__container VacanciesList__container--little" style="row-gap: 1em; margin-top:5em; grid-template-columns: 1fr">
+            <div style="display:flex; justify-content:center;">
+                <img src="/public/assets/empty.svg" width="230px" alt="">
+            </div>
+            <p style="text-align:center; font-size: 1.3em;margin-bottom:0; margin-top:2em">No se encontró ningún elemento en esta página.</p>
+            <div style="width: 100%; display:flex; justify-content:center">
+                <a href="/vacantes" style="padding:3px 6px; background-color:#3f72af; color:#fff">Reiniciar pagina</a> 
+            </div>
+        </div>
+            <!-- <div class="VacanciesList__error">
                 <svg width="50px" height="50px" stroke-width="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#3F72AF"><path d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#3F72AF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 <span>NO SE ENCONTRÓ NINGUNA VACANTE POR EL MOMENTO.<br />VUELVE MÁS TARDE </span>
-            </div>
+            </div> -->
         
         <?php } ?>
     

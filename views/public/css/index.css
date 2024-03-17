@@ -1528,6 +1528,11 @@ li {
   color: rgb(37, 37, 37);
   font-size: 1.1em;
 }
+.CourseBox form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
 .CourseBox__input {
   font-size: 1.2em;
   width: 300px;
@@ -1542,9 +1547,14 @@ li {
   background-color: #3F72AF;
   border: none;
   border-radius: 5px;
-  margin-left: 10px;
   font-size: 1.1em;
   color: white;
+  width: fit-content;
+}
+@media screen and (max-width: 880px){
+  .CourseBox form{
+    flex-direction: column;
+  }   
 }
 
 .ServicesContainer {

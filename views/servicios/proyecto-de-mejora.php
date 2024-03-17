@@ -96,7 +96,7 @@
             </div>
             <form class="ContactSection__form" method="post" action="/servicios/" onsubmit="sendMail(event)">
                 <input type="text" name="name" id="name-input" placeholder="Nombre completo" class="ContactSection__input">
-                <input type="text" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
+                <input type="email" name="email" id="email-input" placeholder="Email" class="ContactSection__input">
                 <input type="text" name="phone" id="phone-input" placeholder="Telefono" class="ContactSection__input">
                 <textarea name="message" rows="10" id="message-input" placeholder="Mensaje" class="ContactSection__input"></textarea>
                 <div>

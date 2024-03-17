@@ -22,8 +22,10 @@
                     'validate' => "/^[a-zA-Z _-]{5,50}$/"
                 ],
                 'email' => [
-                    'type' => 'Regexp',
-                    'validate' => "/^[\w]+@{1}[\w]+\.[a-z]{2,3}$/"
+                    'type' => 'Length',
+                    'validate' => [
+                        'max'=>50
+                    ]
                 ],
                 'phone' => [
                     'type' => 'Regexp',

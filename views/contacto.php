@@ -35,7 +35,7 @@
             <form class="ContactSection__form" method="post" action="/" onsubmit="sendMail(event)">
                 <!-- This form is redirect to index.php to validate and submit the inputs -->
                 <input type="text" id="name-input" name="name" placeholder="Nombre" class="ContactSection__input">
-                <input type="text" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
+                <input type="email" id="email-input" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" id="phone-input" name="phone" placeholder="Telefono" class="ContactSection__input">
                 <input type="text" id="subject-input" name="subject" placeholder="Asunto" class="ContactSection__input">
                 <textarea id="message-input" name="message" rows="10" placeholder="Mensaje" class="ContactSection__input"></textarea>
@@ -49,7 +49,7 @@
             <form class="ContactSection__form" method="post" action="/servicios/" style="padding: 0; border:none;" onsubmit="sendMail(event)">
                 <!-- This form is redirect to servicios/index.php to validate and submit the inputs -->
                 <input type="text" name="name" placeholder="Nombre" class="ContactSection__input">
-                <input type="text" name="email" placeholder="Email" class="ContactSection__input">
+                <input type="email" name="email" placeholder="Email" class="ContactSection__input">
                 <input type="text" name="phone" placeholder="Telefono" class="ContactSection__input">
                 <select name="service" class="ContactSection__input">
                     <option value="">Servicio</option>

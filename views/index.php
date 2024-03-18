@@ -244,7 +244,6 @@
 
     <?php include_once "./templates/footer.php" ?>
 
-    <script type="module" src="/public/js/index.js"></script>
     <script>
         // This script enables the number increaser effect
         function sumarNumeros(span, quantity, text) {

@@ -68,8 +68,10 @@
                     <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Objetivos asociados al plan estratégico de la compañía</li>
                     <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Disminución de pérdidas a través de soluciones encontradas en los proyectos implementados</li>
                     <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Participación del personal en todos los niveles de la organización</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Transformación cultural enfocada en “cero pérdida”</li>
-                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Generación de planes de mejora sustentables y de alto impacto</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Aumento de la productividad y eficiencia de los procesos</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Mejora de la disponibilidad de máquinas</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Disminución de los tiempos muertos de los procesos</li>
+                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Transformación cultural enfocada a “cero defectos de calidad”</li>                    <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Generación de planes de mejora sustentables y de alto impacto</li>
                     <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Estandarización de los procesos y puestos de trabajo</li>
                     <li class="VacancyData__li" style="padding:5px 0 5px 5px;">Mejora considerable de la cuenta de resultados de la compañía</li>
                 </ul>

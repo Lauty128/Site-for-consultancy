@@ -32,8 +32,8 @@
             <h3>Servicios principales</h3>
             <div class="Service__mainServices flex-center-center">
                 <div class="Service__serviceCard flex-center-center">
-                    <span class="title--center-line">Sistemas de mejora</span>
-                    <p>Desarrollamos sistemas de mejora continua a la medida de cada cliente, bajo la aplicación de metodologías eficientes como: Lean Manufacturing, TPM, mantenimiento autónomo, Kaizen, 5s. </p>
+                    <span class="title--center-line">Modelos de mejora</span>
+                    <p>Desarrollamos modelos de mejora continua a la medida de cada cliente, bajo la aplicación de metodologías eficientes como: Lean Manufacturing, TPM, mantenimiento autónomo, Kaizen, 5s. </p>
                 </div>
                 <div class="Service__serviceCard flex-center-center">
                     <span class="title--center-line">Gestión de calidad</span>

@@ -51,7 +51,7 @@
                     <span style="text-align: center">Procedimientos e instructivos</span>
                 </div>
                 <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
-                    <span style="text-align: center">Programa de alto desempeño</span>
+                    <span style="text-align: center">Programa de Empowerment</span>
                 </div>
                 <div class="Service__serviceCard Service__serviceCard--blue flex-center-center">
                     <span style="text-align: center">Reclutamiento y selección de personal</span>

@@ -128,14 +128,14 @@
                 </head>
                 <body>
                     <header>
-                        <img src="cid:logo" alt="logo" style="max-width: 280px">
+                        <img src="cid:logo" alt="logo" style="width: 260px">
                     </header>
                     <h2>'.$this->subject.'</h2>
                     <span><b>Nombre:</b> '.$this->name.'</span>
                     <span><b>Email:</b> '.$this->email.'</span>
                     <span><b>Telefono:</b> '.$this->phone.'</span>
                     <p>
-                        <b style="display: block; margin-top: 20px">Mensaje:</b>
+                        <b style="display: block; margin-top: 20px";margin-bottom:10px;>Mensaje:</b>
                         '.str_replace(array("\r\n", "\n\r", "\r", "\n"), "<br />", $this->message).'
                     </p>
                     <style>
@@ -172,8 +172,8 @@
             $service = $this->get_service();
             if($service !== null){
 
-                $information_icon = $this->information ? '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>';
-                $budget_icon = $this->budget ? '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 80c-8.8 0-16 7.2-16 16V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V96c0-8.8-7.2-16-16-16H64zM0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>';
+                $information_response = $this->information ? 'Se requiere' : 'No se requiere';
+                $budget_response = $this->budget ? 'Se requiere' : 'No se requiere';
     
                 $this->subject = "Consulta sobre servicios";
                 $this->phone = ($this->phone == '') ? 'Sin especificar' : $this->phone;
@@ -182,7 +182,7 @@
                 <html lang="es">
                     <body>
                         <header>
-                            <img src="cid:logo" alt="logo" style="max-width: 280px">
+                            <img src="cid:logo" alt="logo" style="width: 250px">
                         </header>
                         <h2>'.$this->subject.'</h2>
                         <span class="vacancy">Servicio: <b>'.$service['name'].'</b></span>
@@ -191,15 +191,15 @@
                         <span><b>Email:</b> '.$this->email.'</span>
                         <span><b>Telefono:</b> '.$this->phone.'</span>
                         <span>
-                            '.$budget_icon.'
-                            <b>Presupuesto</b>
+                            <b>Presupuesto:  </b>
+                            '.$budget_response.'
                         </span>
                         <span>
-                            '.$information_icon.'
-                            <b>Información</b>
+                            <b>Información:  </b>
+                            '.$information_response.'
                         </span>
                         <p>
-                            <b style="display: block; margin-top: 20px">Mensaje:</b>
+                            <b style="display: block; margin-top: 20px;margin-bottom:10px;">Mensaje:</b>
                             '.str_replace(array("\r\n", "\n\r", "\r", "\n"), "<br />", $this->message).'
                         </p>
                         <style>
@@ -258,7 +258,7 @@
             <html lang="es">
                 <body>
                     <header>
-                        <img src="cid:logo" alt="logo" style="max-width: 280px">
+                        <img src="cid:logo" alt="logo" style="width: 250px">
                     </header>
                     <h2>'.$this->subject.'</h2>
                     <span class="vacancy"><b>'.$this->vacancy["role"].'</b> ('.$this->vacancy["id_vacancy"].')</span>
@@ -268,7 +268,7 @@
                     <span><b>Telefono:</b> '.$this->phone.'</span>
                     <span><b>Ciudad:</b> '.$this->city.'</span>
                     <p>
-                        <b style="display: block; margin-top: 20px">Mensaje:</b>
+                        <b style="display: block; margin-top: 20px;margin-bottom:10px;">Mensaje:</b>
                         '.str_replace(array("\r\n", "\n\r", "\r", "\n"), "<br />", $this->message).'
                     </p>
                     <style>
